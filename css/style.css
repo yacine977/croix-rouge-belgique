@@ -1,0 +1,85 @@
+/* === RESET + BASE === */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Police simple et lisible */
+}
+
+/* === STYLE DU HEADER === */
+.main-header {
+  background-color: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* ombre douce */
+}
+
+/* Alignement horizontal du logo et des boutons */
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+/* Taille du logo */
+.logo img {
+  height: 70px;
+}
+
+/* Conteneur des 3 boutons à droite */
+.header-buttons {
+  display: flex;
+  gap: 10px; /* espace entre les boutons */
+}
+
+/* === STYLES DES BOUTONS === */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px; /* carré */
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  border: none;
+  padding: 0;
+}
+
+/* Boutons DON et REJOINDRE */
+.btn.red {
+  background-color: #e2001a; /* rouge Croix-Rouge */
+  color: white;
+}
+
+/* Bouton MENU (blanc avec bord rouge) */
+.btn.outline {
+  border: 2px solid #e2001a;
+  color: #e2001a;
+  background-color: white;
+  display: flex;
+  flex-direction: column; /* empile l’icône et le texte */
+  align-items: center;
+  justify-content: center;
+  gap: 6px; /* espace entre les lignes et le texte */
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 8px;
+  width: 80px;
+  height: 80px;
+  padding: 0;
+}
+
+/* Icône burger à 3 lignes */
+.burger {
+  width: 20px;
+  height: 2px;
+  background-color: #e2001a;
+  box-shadow: 0 6px 0 #e2001a, 0 -6px 0 #e2001a; /* crée les deux autres lignes */
+}
+
+/* Ligne rouge en bas du header */
+.red-line {
+  height: 5px;
+  background-color: #e2001a;
+  width: 100%;
+}
