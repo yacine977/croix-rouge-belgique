@@ -214,3 +214,28 @@ body {
   width: auto;
   height: auto;
 }
+
+/* === SECTION IMAGE CLIQUABLE TESTAMENT === */
+
+/* Conteneur centré de la section "testament" */
+.don-testament-section {
+  display: flex; /* Alignement en ligne */
+  justify-content: center; /* Centre horizontalement l'image */
+  align-items: center; /* Centre verticalement l'image (si hauteur définie) */
+  margin-top: 60px; /* ✅ Espace entre le hero et cette section */
+  margin-bottom: 50px; /* Espace en bas de la section */
+}
+
+/* Image cliquable responsive */
+.testament-img {
+  width: 700px; /* Largeur fixe sur desktop */
+  height: auto; /* Garde les proportions */
+  max-width: 90%; /* S’adapte sur petits écrans */
+  cursor: pointer; /* Curseur en forme de main */
+  transition: transform 0.3s ease; /* Animation douce au survol */
+}
+
+/* Effet de zoom léger au survol */
+.testament-img:hover {
+  transform: scale(1.02); /* Zoom de 2% */
+}
