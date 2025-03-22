@@ -6,8 +6,13 @@ body {
 
 /* === STYLE DU HEADER === */
 .main-header {
+  position: fixed; /* 👈 Rend le header sticky */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* S'assure qu'il passe au-dessus du contenu */
   background-color: white;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* ombre douce */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Alignement horizontal du logo et des boutons */
@@ -94,6 +99,8 @@ body {
   text-align: center;
   padding: 100px 20px;
   position: relative;
+
+  margin-top: 100px; /* 👈 Espace pour compenser la hauteur du header */
 }
 
 .hero-banner::after {
@@ -125,7 +132,7 @@ body {
 .hero-banner {
   background-image: url("../images/hero-bg.jpg"); /* image de fond */
   background-size: cover; /* couvre tout l'espace */
-  background-position: center; /* centrée */
+  background-position: center 30%;
   background-repeat: no-repeat; /* pas de répétition */
   color: white; /* texte en blanc */
   text-align: center; /* centré */
