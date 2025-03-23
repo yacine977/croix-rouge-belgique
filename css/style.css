@@ -25,7 +25,8 @@ body {
 
 /* Taille du logo */
 .logo img {
-  height: 70px;
+  width: 150px; /* ✅ largeur précise */
+  height: 32.4667px; /* ✅ garde les proportions (32.4667px de haut environ) */
 }
 
 /* Conteneur des 3 boutons à droite */
@@ -39,12 +40,13 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
-  height: 80px; /* carré */
+  width: 60px; /* ✅ réduit par rapport aux 80px actuels */
+  height: 60px; /* ✅ idem ici */
+  font-size: 0.59rem; /* ✅ texte plus petit */
   font-weight: bold;
   text-decoration: none;
   border-radius: 8px;
-  font-size: 0.75rem;
+
   text-transform: uppercase;
   border: none;
   padding: 0;
@@ -66,11 +68,11 @@ body {
   align-items: center;
   justify-content: center;
   gap: 6px; /* espace entre les lignes et le texte */
-  font-size: 0.75rem;
+  font-size: 0.59rem;
   font-weight: bold;
   border-radius: 8px;
-  width: 80px;
-  height: 80px;
+  width: 60px; /* ✅ réduit par rapport aux 80px actuels */
+  height: 60px; /* ✅ idem ici */
   padding: 0;
 }
 
@@ -100,7 +102,7 @@ body {
   padding: 100px 20px;
   position: relative;
 
-  margin-top: 100px; /* 👈 Espace pour compenser la hauteur du header */
+  margin-top: 85px; /* 👈 Espace pour compenser la hauteur du header */
 }
 
 .hero-banner::after {
