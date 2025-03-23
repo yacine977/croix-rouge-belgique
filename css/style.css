@@ -246,3 +246,168 @@ body {
 .testament-img:hover {
   transform: scale(1.02); /* Zoom de 2% */
 }
+/* === SECTION ACTUALITÉS === */
+.actus-section {
+  padding: 80px 20px; /* Espace autour de la section */
+  background-color: #fff; /* Fond blanc */
+}
+
+/* Conteneur principal des actualités (2 colonnes) */
+.actus-container {
+  width: 90%; /* ✅ Largeur étendue sur la page */
+  height: 911.6px; /* Hauteur fixe demandée */
+  margin: 0 auto; /* Centrage horizontal */
+  display: flex;
+  gap: 40px; /* Espace entre les colonnes */
+  flex-wrap: wrap; /* Pour gestion responsive */
+  padding: 0 20px; /* Aération latérale */
+}
+
+/* === COLONNE GAUCHE : liste d’actus === */
+.actus-left {
+  flex: 1;
+  min-width: 300px; /* Largeur minimale pour petit écran */
+}
+
+/* Titre de la section (non utilisé ici mais prêt) */
+.actus-left h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* Une actu dans la liste (gauche) */
+.actus-item {
+  display: flex; /* image + texte côte à côte */
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* Image de l’actu */
+.actus-item img {
+  width: 140px;
+  height: 90px;
+  object-fit: cover; /* évite la déformation */
+  border-radius: 4px;
+}
+
+/* Texte de l’actu */
+.actus-text {
+  flex: 1; /* prend tout l’espace dispo */
+}
+
+/* Titre d’une actu */
+.actus-text h3 {
+  font-size: 1rem;
+  margin: 0 0 5px;
+  color: #333;
+  line-height: 1.3;
+}
+
+/* Variante rouge */
+.actus-text .red {
+  color: #e2001a;
+}
+
+/* Date + catégorie */
+.actus-text .meta {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+/* Style de la catégorie */
+.actus-text .category {
+  color: #999;
+  font-weight: bold;
+}
+
+/* Extrait d’article */
+.actus-text .excerpt {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Lien "Toutes les actualités" en bas */
+.all-news-link {
+  display: inline-block;
+  color: #e2001a;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.1rem; /* ✅ légèrement plus gros */
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+/* Survol du lien : effet doux + grossissement */
+.all-news-link:hover {
+  text-decoration: underline;
+  font-size: 1.15rem;
+  transition: font-size 0.3s ease;
+}
+
+/* === COLONNE DROITE : mise en avant === */
+.actus-right {
+  flex: 1;
+  min-width: 300px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+/* Titre de la mise en avant */
+.actus-right .highlight-title {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Image de l’article mis en avant */
+.actus-right img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+/* Texte de l’article mis en avant */
+.actus-right .highlight-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Date et catégorie */
+.actus-right .meta {
+  font-size: 0.85rem;
+  color: #999;
+  text-transform: uppercase;
+}
+
+/* === Responsive === */
+@media (max-width: 900px) {
+  .actus-container {
+    flex-direction: column; /* Passe en colonne pour petits écrans */
+  }
+}
+
+/* Réglage supplémentaire de .actus-right (fond blanc + animation au hover) */
+.actus-right {
+  flex: 1;
+  min-width: 300px;
+  background-color: white; /* ✅ cadre blanc */
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animation au survol */
+.actus-right:hover {
+  transform: translateY(-6px); /* élévation */
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
