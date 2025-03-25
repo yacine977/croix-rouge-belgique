@@ -413,3 +413,104 @@ body {
   transform: translateY(-6px); /* élévation */
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
 }
+
+/* === SECTION NOUS AGISSONS === */
+.action-section {
+  padding: 100px 20px; /* Espace intérieur en haut et bas + sur les côtés */
+  max-width: 1200px; /* Limite la largeur de la section */
+  margin: 0 auto; /* Centre horizontalement la section */
+}
+
+/* Sous-titre de la section ("NOUS AGISSONS") */
+.section-subtitle {
+  text-align: center;
+  text-transform: uppercase; /* Met en majuscules */
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Titre principal transparent */
+.section-title {
+  font-size: 1.8rem; /* Taille du texte */
+  color: rgba(0, 0, 0, 0.5); /* Noir avec transparence à 50% */
+  font-weight: 300; /* Texte léger (light) */
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* === CONTENEUR D’UN BLOC D’ACTION (image + texte) === */
+.action-block {
+  display: flex; /* Mise en ligne des enfants (img + texte) */
+  align-items: center; /* Centre verticalement */
+  gap: 40px; /* Espace entre image et texte */
+  margin-bottom: 30px; /* Moins d’espace entre les blocs */
+  background-color: #f1f1f1; /* Fond gris clair */
+  padding: 30px; /* Espacement interne */
+  border-radius: 10px; /* Bords arrondis */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05); /* Légère ombre */
+  transition: transform 0.3s ease; /* Transition fluide sur le mouvement */
+}
+
+/* Variante inversée : texte à gauche et image à droite */
+.action-block.reverse {
+  flex-direction: row-reverse;
+}
+
+/* === IMAGE DANS UN BLOC === */
+.action-block img {
+  width: 50%; /* Prend la moitié du conteneur */
+  border-radius: 6px; /* Coins arrondis */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); /* Petite ombre douce */
+  transition: transform 0.4s ease; /* Animation sur le hover */
+}
+
+/* Animation lors du survol de tout le bloc */
+.action-block:hover img {
+  transform: scale(1.03) translateY(-5px); /* Zoom + légère élévation */
+}
+
+/* === TEXTE DANS UN BLOC === */
+.action-text {
+  width: 50%; /* Prend la moitié de l’espace (en face de l’image) */
+}
+
+/* Titre du bloc */
+.action-text h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* Petite ligne noire sous le titre */
+.action-text h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #000;
+  margin-top: 6px;
+}
+
+/* Paragraphe descriptif */
+.action-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 20px 0;
+}
+
+/* Lien stylisé rouge */
+.action-link {
+  color: #e2001a; /* Rouge Croix-Rouge */
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+/* Survol du lien : soulignement */
+.action-link:hover {
+  text-decoration: underline;
+}
