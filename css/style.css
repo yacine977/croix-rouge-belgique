@@ -509,8 +509,40 @@ body {
   font-size: 1.1rem;
   text-decoration: none;
 }
+.support-2023 h2 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5); /* noir à 50% d’opacité */
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
 
-/* Survol du lien : soulignement */
-.action-link:hover {
-  text-decoration: underline;
+.support-images {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* plus d'espace entre les cadres */
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.support-box {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 350px; /* ✅ largeur minimale augmentée */
+  max-width: 420px; /* ✅ largeur max augmentée */
+  text-align: center;
+}
+
+.support-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.support-box img {
+  width: 100%; /* l’image prend tout l’espace du cadre */
+  height: auto;
+  display: block;
 }
