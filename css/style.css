@@ -250,7 +250,8 @@ body {
 }
 /* === SECTION ACTUALITÉS === */
 .actus-section {
-  padding: 80px 20px; /* Espace autour de la section */
+  padding-bottom: 40px; /* ou moins que 80px */
+  padding-top: 60px;
   background-color: #fff; /* Fond blanc */
 }
 
