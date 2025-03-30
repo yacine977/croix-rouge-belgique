@@ -250,8 +250,11 @@ body {
 }
 /* === SECTION ACTUALITÉS === */
 .actus-section {
-  padding-bottom: 40px; /* ou moins que 80px */
-  padding-top: 60px;
+  padding: 100px 20px; /* Espace intérieur en haut et bas + sur les côtés */
+  max-width: 1350px; /* Limite la largeur de la section */
+  margin: 0 auto; /* Centre horizontalement la section */
+  width: 90%; /* S’adapte à la largeur de l’écran */
+
   background-color: #fff; /* Fond blanc */
 }
 
@@ -418,8 +421,9 @@ body {
 /* === SECTION NOUS AGISSONS === */
 .action-section {
   padding: 100px 20px; /* Espace intérieur en haut et bas + sur les côtés */
-  max-width: 1200px; /* Limite la largeur de la section */
+  max-width: 1350px; /* Limite la largeur de la section */
   margin: 0 auto; /* Centre horizontalement la section */
+  width: 90%; /* S’adapte à la largeur de l’écran */
 }
 
 /* Sous-titre de la section ("NOUS AGISSONS") */
@@ -510,6 +514,14 @@ body {
   font-size: 1.1rem;
   text-decoration: none;
 }
+
+.support-2023 {
+  margin-bottom: 80px;
+  max-width: 1350px; /* Limite la largeur de la section */
+  margin: 0 auto; /* Centre horizontalement la section */
+  width: 90%; /* S’adapte à la largeur de l’écran */
+  padding: 40px 20px 60px; /* top 40px, bottom 60px */
+}
 .support-2023 h2 {
   text-align: center;
   color: rgba(0, 0, 0, 0.5); /* noir à 50% d’opacité */
@@ -546,4 +558,93 @@ body {
   width: 100%; /* l’image prend tout l’espace du cadre */
   height: auto;
   display: block;
+}
+/* === SECTION COMMENT NOUS SOUTENIR === */
+.support-methods {
+  max-width: 1350px; /* Limite la largeur de la section */
+  margin: 0 auto; /* Centre horizontalement la section */
+  width: 90%; /* S’adapte à la largeur de l’écran */
+
+  padding: 100px 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.support-subtitle {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.support-title {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.8);
+  max-width: 800px;
+  margin: 0 auto 60px;
+  line-height: 1.5;
+}
+
+.support-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.support-card {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  max-width: 320px;
+  flex: 1 1 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.support-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-circle img {
+  width: 40px;
+  height: 40px;
+}
+
+.support-card h3 {
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 15px;
+}
+
+.support-card p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.support-link {
+  font-style: italic;
+  color: #e2001a;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.support-link:hover {
+  text-decoration: underline;
 }
