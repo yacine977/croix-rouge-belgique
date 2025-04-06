@@ -651,7 +651,7 @@ body {
 
 /* === SECTION FAQ === */
 .faq-section {
-  max-width: 1000px;
+  max-width: 1350px;
   margin: 50px auto 0;
   padding: 80px 20px;
   background-color: #f5f5f5;
@@ -756,4 +756,144 @@ body {
   line-height: 0;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-section {
+  position: relative;
+  background: url("../images/newsletter-bg.jpg") center/cover no-repeat;
+  color: white;
+  padding: 60px 20px 100px;
+  text-align: center;
+  max-width: 1350px;
+  margin: 50px auto 0;
+  width: 90%;
+  overflow: hidden;
+}
+
+/* Overlay rouge par-dessus l’image */
+.newsletter-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(166, 33, 19, 0.85); /* rouge foncé avec transparence */
+  z-index: 0;
+}
+
+.newsletter-container {
+  position: relative; /* 👈 pour que le contenu soit au-dessus du overlay */
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 40px 60px;
+  border-radius: 8px;
+  z-index: 1; /* au-dessus du fond */
+}
+
+.newsletter-container > * {
+  position: relative;
+  z-index: 1;
+}
+.newsletter-title {
+  font-size: 1.6rem;
+  font-weight: 300; /* léger */
+  color: rgba(255, 255, 255, 0.85); /* blanc légèrement transparent */
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.newsletter-form label {
+  display: block;
+  font-size: 0.85rem;
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.newsletter-form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  margin-top: 8px; /* espace entre le label et l'input */
+}
+
+.captcha-container {
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.captcha-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.captcha-code {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.refresh-captcha {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.captcha-label {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.newsletter-privacy {
+  margin-top: 40px;
+  font-style: italic;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.65);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding-top: 20px;
+  line-height: 1.5;
+}
+
+.newsletter-submit {
+  margin-top: 30px;
+  background-color: #e2001a;
+  color: white;
+  padding: 15px 35px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.newsletter-subtitle {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: white;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.newsletter-form label {
+  display: block;
+  text-align: left;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 0.9rem; /* plus petit */
+  font-weight: 300; /* moins gras */
+  color: rgba(255, 255, 255, 0.75); /* légèrement transparent */
 }

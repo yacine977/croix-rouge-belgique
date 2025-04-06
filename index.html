@@ -372,6 +372,56 @@
     <!-- Répéter autant de .faq-item que nécessaire -->
   </div>
 </section>
+<!-- SECTION NEWSLETTER -->
+<section class="newsletter-section">
+  
+
+  <div class="newsletter-container">
+    <p class="newsletter-subtitle">RESTONS EN CONTACT</p>
+
+    <h2 class="newsletter-title">Inscrivez-vous à notre newsletter et restez informé·e de nos dernières actions, de nos besoins et de notre actualité.</h2>
+    
+    <form class="newsletter-form" autocomplete="off">
+      <label>
+        Votre adresse email *
+        <input type="email" required>
+      </label>
+
+      <label>
+        Votre prénom *
+        <input type="text" required>
+      </label>
+
+      <label>
+        Votre nom *
+        <input type="text" required>
+      </label>
+
+      <div class="captcha-container">
+        <p><strong>Je ne suis pas un robot</strong></p>
+        <div class="captcha-box">
+          <span class="captcha-code">GSV3^w</span>
+          <button type="button" class="refresh-captcha">🔄</button>
+        </div>
+        <small class="captcha-label">Captcha</small>
+      </div>
+
+      <p class="newsletter-privacy">
+        La Croix-Rouge souhaite vous informer sur les projets que vous soutenez, sur les services qu’elle met à votre disposition, et garder une relation active avec vous. Pour en savoir plus sur la manière dont vos données sont traitées, rendez-vous sur notre page Vie Privée.
+      </p>
+
+      <button type="submit" class="newsletter-submit">ENVOYER</button>
+    </form>
+  </div>
+</section>
+<script>
+
+window.addEventListener("load", () => {
+  const form = document.querySelector(".newsletter-form");
+  if (form) form.reset();
+});
+
+</script>
 
 
 
