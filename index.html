@@ -53,7 +53,7 @@
         </p>
 
         <!-- Bouton rouge "Je fais un don" -->
-        <a href="don.html" class="btn red hero-btn">JE FAIS UN DON</a>
+        <a href="https://je-donne.croix-rouge.be/Urgences-Internationales/~mon-don?_cv=1" class="btn red hero-btn">JE FAIS UN DON</a>
       </div>
     </section>
     <!-- Section "testament" avec une image cliquable -->
@@ -275,6 +275,101 @@
       </p>
       <a href="https://volontariat.croix-rouge.be/" class="support-link">Je m’engage →</a>
     </div>
+  </div>
+</section>
+<!-- SECTION FAQ -->
+<section class="faq-section">
+  <p class="faq-subtitle">CONSULTEZ NOS FAQ</p>
+  <h2 class="faq-title">Vous vous posez une question ?</h2>
+
+  <!-- Barre de recherche -->
+  <div class="faq-search">
+    <input type="text" placeholder="Rechercher sur la FAQ">
+    <button><img src="images/icon-search.svg" alt="Rechercher"></button>
+  </div>
+
+  <!-- Questions -->
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-question">Comment renseigner mon numéro de registre national auprès de la Croix-Rouge ?
+        <button class="faq-toggle">+</button>
+      </div>
+      
+      <div class="faq-answer">
+        Depuis le 1er janvier 2024, un nouveau texte législatif (voté le 28 décembre 2023) exige [...] Vous pouvez nous la transmettre via notre formulaire en ligne disponible ici.
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">La Croix-Rouge fait-elle du démarchage par téléphone ?
+      <button class="faq-toggle">+</button>
+      </div>
+      <div class="faq-answer">
+        Oui, la Croix-Rouge fait de la récolte de fonds par téléphone. Nous appelons nos donateur·rices pour les remercier [...] contactez le service donateurs au 02/209.83.99 ou via service.donateurs@croix-rouge.be
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">Je souhaite poser une question à la Croix-Rouge concernant mon don – comment faire ?
+      <button class="faq-toggle">+</button></div>
+      <div class="faq-answer">
+        Contactez le service donateurs, par téléphone au 02/209.83.99 ou par email : service.donateurs@croix-rouge.be
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">Que fait la Croix-Rouge avec mon argent ?
+      <button class="faq-toggle">+</button></div>
+      <div class="faq-answer">
+        Vos dons permettent d’aider les personnes les plus vulnérables en Belgique et à l’étranger. [...] 292 euros : une tente permettant d’abriter 10 personnes qui ont tout perdu.
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">Puis-je soutenir financièrement un projet spécifique ?
+      <button class="faq-toggle">+</button></div>
+      <div class="faq-answer">
+        En règle générale, vos dons sont attribués à un fonds global [...] via email : service.donateurs@croix-rouge.be ou par téléphone au 02/209.83.99.
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">Don en ligne : concrètement, comment se passe le don en ligne ?
+      <button class="faq-toggle">+</button></div>
+      <div class="faq-answer">
+        Lorsque vous effectuez un don en ligne [...] l’espace est sécurisé dès que l’URL commence par https.
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">Est-ce qu’un don en ligne est sûr ?
+      <button class="faq-toggle">+</button></div>
+      <div class="faq-answer">
+        Pour son module de don en ligne, la Croix-Rouge travaille avec un partenaire de confiance : Ogone [...] Elles ne circulent donc jamais en clair sur Internet.
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">Urgences : puis-je vous aider en déposant des couvertures, de la nourriture ou des vêtements ?
+      <button class="faq-toggle">+</button>
+      </div>
+      <div class="faq-answer">
+        (Ajoute ici la réponse officielle si tu l’as. Sinon on peut écrire une phrase claire ensemble.)
+      </div>
+    </div>
+    <script>
+      document.querySelectorAll('.faq-toggle').forEach(button => {
+        button.addEventListener('click', e => {
+          const item = button.closest('.faq-item');
+          item.classList.toggle('open');
+          button.textContent = item.classList.contains('open') ? '−' : '+';
+        });
+      });
+    </script>
+    
+
+
+    <!-- Répéter autant de .faq-item que nécessaire -->
   </div>
 </section>
 
