@@ -1070,3 +1070,71 @@ main {
   font-style: normal;
   font-size: 1rem;
 }
+
+.hero-don {
+  position: relative;
+  background-image: url("../images/hero-don.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 10%; /* 👈 décale l’image vers le bas */
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-don-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-don-content {
+  max-width: 800px;
+  z-index: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-don-subtitle {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero-don-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.hero-don-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+
+.hero-don-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 30px;
+  background-color: #e2001a;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.hero-don-btn:hover {
+  background-color: #b80014;
+}
