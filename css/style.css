@@ -1444,3 +1444,55 @@ main {
 iframe {
   border-radius: 8px; /* Coins arrondis de la vidéo */
 }
+
+.hero-job {
+  position: relative;
+  background-image: url("../images/hero-job.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 10%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  z-index: 2; /* ✅ au-dessus de don-actions */
+}
+
+.page-accueil .don-submenu {
+  display: flex;
+  align-items: center;
+}
+
+.page-accueil .don-submenu .nav-link:last-child {
+  margin-left: auto;
+}
+
+.page-accueil .hero-don-text {
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.page-accueil .hero-don-text::before,
+.page-accueil .hero-don-text::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 40px); /* ajustez ici la largeur des traits */
+  height: 1px; /* épaisseur réduite des traits */
+  background-color: white;
+}
+
+.page-accueil .hero-don-text::before {
+  top: 0;
+}
+
+.page-accueil .hero-don-text::after {
+  bottom: 0;
+}
