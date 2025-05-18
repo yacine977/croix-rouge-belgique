@@ -1496,3 +1496,38 @@ iframe {
 .page-accueil .hero-don-text::after {
   bottom: 0;
 }
+
+.hero-retrouver-proche {
+  position: relative;
+  background-image: url("../images/retrouver-un-proche.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 10%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  z-index: 2; /* ✅ au-dessus de don-actions */
+}
+
+.section-rlf {
+  padding: 40px 20px;
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+  color: #333;
+}
+
+.container-rlf {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.container-rlf strong {
+  font-weight: 700;
+  color: #000;
+}
