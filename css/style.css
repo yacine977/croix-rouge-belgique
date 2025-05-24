@@ -266,11 +266,11 @@ main {
 }
 /* === SECTION ACTUALITÉS === */
 .actus-section {
-  padding: 100px 20px; /* Espace intérieur en haut et bas + sur les côtés */
+  /* Espace intérieur en haut et bas + sur les côtés */
   max-width: 1350px; /* Limite la largeur de la section */
   margin: 0 auto; /* Centre horizontalement la section */
   width: 90%; /* S’adapte à la largeur de l’écran */
-
+  padding: 100px 20px;
   background-color: #fff; /* Fond blanc */
 }
 
@@ -1530,4 +1530,277 @@ iframe {
 .container-rlf strong {
   font-weight: 700;
   color: #000;
+}
+
+.hero-sang {
+  position: relative;
+  background-image: url("../images/donner-son-sang.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 10%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  z-index: 2; /* ✅ au-dessus de don-actions */
+}
+
+nav {
+  padding: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Affichage horizontal */
+  gap: 20px; /* Espacement entre les éléments */
+}
+
+.nav-links li {
+  display: inline; /* Optionnel avec flex */
+}
+
+.nav-links a {
+  text-decoration: none; /* Supprime le soulignement */
+  color: black; /* Couleur sobre */
+}
+
+.barometre {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.barometre h2 {
+  font-weight: 300;
+  font-size: 32px;
+  color: #555;
+}
+
+.barometre p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.blood-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+.blood-type {
+  text-align: center;
+}
+
+.blood-type img {
+  width: 50px;
+  height: auto;
+}
+
+.blood-type span {
+  display: block;
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.don-form {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.don-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #b10026;
+  font-size: 24px;
+}
+
+.don-form label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.don-types {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.don-types input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.don-types label {
+  font-weight: normal;
+}
+
+.don-form input[type="text"],
+.don-form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.availability {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.availability label {
+  margin: 0;
+  font-weight: normal;
+}
+
+.note {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.note a {
+  color: #b10026;
+  text-decoration: underline;
+}
+
+.section-barometre {
+  max-width: 900px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.section-barometre h2 {
+  font-size: 28px;
+  color: #b20000;
+  margin-bottom: 20px;
+}
+
+.contenu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.contenu img {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.texte {
+  flex: 1;
+}
+
+.texte p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.legende {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .contenu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texte {
+    text-align: center;
+  }
+}
+
+.row-sections {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.barometre,
+.test {
+  flex: 1 1 45%; /* Ajustez selon la largeur souhaitée */
+  box-sizing: border-box;
+}
+
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.card {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #b30000;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.section-titlee {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+
+  color: #444;
+
+  margin-bottom: 30px;
+  font-weight: bold;
 }

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icône dans l’onglet du navigateur -->
+    <link rel="icon" type="image/png" href="images/favicon.jpg" />
+    <!-- Lien vers la feuille de style externe -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Donner son sang</title>
+  </head>
+
+  <body class="page-accueil">
+    <main>
+    <!-- Début du header principal -->
+     <!-- Début du header principal -->
+    <header class="main-header">
+      <!-- Conteneur du logo + boutons -->
+      <div class="container">
+        <!-- Logo de la Croix-Rouge -->
+        <div class="logo">
+          <img src="images/logo-crb.svg" alt="Croix-Rouge de Belgique" />
+          <nav>
+            <ul class="nav-links">
+              <li><a href="index.html">ACCUEIL</a></li>
+              <li><a href="donner-son-sang.html" class="active">DONNER SON SANG</a></li>
+              <li><a href="volontaire.html">DEVENIR VOLONTAIRE</a></li>
+              <li><a href="formation.html">SE FORMER</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Boutons à droite (Don, Rejoindre, Menu) -->
+        <div class="header-buttons">
+          <a href="don.html" class="btn red">DON</a>
+          <a href="volontaire.html" class="btn red">REJOINDRE</a>
+
+          <!-- Bouton MENU avec icône burger au-dessus -->
+          <a href="#" class="btn outline">
+            <span class="burger"></span>
+            MENU
+          </a>
+        </div>
+        <!-- Barre de navigation secondaire -->
+      </div>
+
+      <!-- Ligne rouge horizontale en bas du header -->
+      <div class="red-line"></div>
+      <!-- Barre de navigation secondaire -->
+      <nav class="don-submenu">
+        <a href="#" class="nav-link active"><i class="icon"></i>LE SERVICE DU SANG</a>
+        <a
+          href="https://faire-un-don.croix-rouge.be/don-en-ligne/"
+          class="nav-link"
+        ></a>
+        <a href="#" class="nav-link">ACCUEIL</a>
+  
+        <a href="#" class="nav-link active"><i class="icon"></i>Voir les activités de la Croix-Rouge</a>
+      </nav>
+    </header>
+    <!-- Section HERO : image de fond, titre, texte et bouton d'appel à l'action -->
+    <section class="hero-sang">
+  
+    </section>
+    <div class="row-sections">
+    <section class="barometre">
+  <h2>Baromètre des groupes sanguins</h2>
+  <p>
+    Le stock de votre groupe se porte mal ? Planifiez un don si vous le pouvez.<br>
+    Votre goutte a le sourire ? On compte sur votre prochain don pour qu'elle le garde !
+  </p>
+
+  <div class="blood-grid">
+    <div class="blood-type">
+      <img src="images/goute-pleine.png" alt="A+" />
+      <span>A+</span>
+    </div>
+    <div class="blood-type">
+      <img src="images/goute-pleine.png" alt="O+" />
+      <span>O+</span>
+    </div>
+    <div class="blood-type">
+      <img src="images/goute-pleine.png" alt="B+" />
+      <span>B+</span>
+    </div>
+    <div class="blood-type">
+      <img src="images/goute-pleine.png" alt="AB+" />
+      <span>AB+</span>
+    </div>
+    <div class="blood-type">
+      <img src="images/goute-pleine.png" alt="A-" />
+      <span>A-</span>
+    </div>
+    <div class="blood-type">
+      <img src="images/moitier-plien.jpg" alt="O-" />
+      <span>O-</span>
+    </div>
+    <div class="blood-type">
+      <img src="images/moitier-plien.jpg" alt="B-" />
+      <span>B-</span>
+    </div>
+    <div class="blood-type">
+      <img src="images/moitier-plien.jpg" alt="AB-" />
+      <span>AB-</span>
+    </div>
+  </div>
+</section>
+<section class="test">
+    <div class="don-form">
+        <h2>Trouver une collecte près de chez vous</h2>
+        <form>
+            <label>Sélectionnez un ou plusieurs types de don :</label>
+            <div class="don-types">
+                <input type="checkbox" id="sang" name="don" value="sang" checked>
+                <label for="sang">Sang</label>
+                <input type="checkbox" id="plasma" name="don" value="plasma">
+                <label for="plasma">Plasma</label>
+                <input type="checkbox" id="plaquettes" name="don" value="plaquettes">
+                <label for="plaquettes">Plaquettes</label>
+            </div>
+            <label for="postal-code">Entrez votre code postal ou votre ville :</label>
+            <input type="text" id="postal-code" name="postal-code" value="1000">
+            <input type="text" id="city" name="city" value="Bruxelles">
+            <label for="availability">Entrez vos disponibilités :</label>
+            <div class="availability">
+                <label for="start-date">Du</label>
+                <input type="date" id="start-date" name="start-date" value="2025-05-24">
+                <label for="end-date">au</label>
+                <input type="date" id="end-date" name="end-date" value="2025-06-24">
+
+            </div>
+            <button type="submit" class="btn red">Rechercher</button>
+            <p class="note">
+                Vous pouvez également consulter notre page <a href="https://sang.croix-rouge.be/">Donner du sang</a> pour plus d'informations.
+            </p>
+
+        </form>
+    </div>
+    </section>
+   
+
+    <section class="section-barometre">
+    <h2>Baromètre du plasma</h2>
+    <div class="contenu">
+      <div>
+        <img src="images/goutte-plasma-presque-vide.svg" alt="Statut Insuffisant">
+        <div class="legende">Insuffisant</div>
+      </div>
+      <div class="texte">
+        <p>Il reste <strong>722 plages de rendez-vous</strong> possibles sur les 14 prochains jours.</p>
+        <p>Vous voulez nous aider et donner votre plasma ? Prenez rendez-vous dans le site de collecte près de chez vous.</p>
+        <p>Plus d’informations sur le site : <a href="https://www.donneurdeplasma.be" target="_blank">www.donneurdeplasma.be</a></p>
+      </div>
+    </div>
+  </section>
+
+   
+    <!-- SECTION ACTUALITÉS RÉCENTES -->
+    <section class="actus-section">
+      <!-- Conteneur global des actualités (mise en page en 2 colonnes) -->
+      
+        <!-- Colonne de gauche : liste des actualités récentes avec liens -->
+        <div class="actus-left">
+          <!-- Titre de la section -->
+          <h4>ACTUALITÉS RÉCENTES</h4>
+
+          <!-- ACTU 1 : lien cliquable vers l’article externe -->
+          <a
+            href="https://www.croix-rouge.be/2025/03/12/fermeture-du-train-hostel-des-familles-enfants-et-bebes-menaces-dun-retour-a-la-rue/"
+            target="_blank"
+            class="actus-link"
+          >
+            <article class="actus-item">
+              <!-- Image de l’actu -->
+              <img src="images/actu1-sang.jpeg" alt="Photo actu 1" />
+              <!-- Contenu textuel de l’actu -->
+              <div class="actus-text">
+                <h3>
+                  Conférence Jeudi Santé à Liège : Don de sang, don de vie 
+                </h3>
+                <p class="meta">
+                  04.05.2025 
+                </p>
+                <p>
+                    Le 15 mai prochain, le Service du Sang participera à la conférence "Don de sang, Don de vie" organisée dans le cadre des Jeudis Santé de la Province de Liège. Cet événement marquera le lancement du Mois du Donneur. Une collecte aura également lieu devant le bâtiment du B3.
+                </p>
+               
+              </div>
+            </article>
+          </a>
+
+          <!-- ACTU 2 -->
+          <a
+            href="https://www.croix-rouge.be/2025/03/04/la-grande-bouquinerie-revient-un-nouveau-chapitre-secrit-a-lancien-musee-mima/"
+            target="_blank"
+            class="actus-link"
+          >
+            <article class="actus-item">
+              <!-- Image de l’actu -->
+              <img src="images/actu2-sang.jpeg" alt="Photo actu 2" />
+              <!-- Contenu textuel de l’actu -->
+              <div class="actus-text">
+                <h3>
+               Le jaune sauve des vies. Mais pas n’importe quel jaune. 
+                </h3>
+                <p class="meta">
+                  14.04.2025 
+                </p>
+                <p class="excerpt">
+                  Le jaune sauve des vies. Mais pas n’importe quel jaune. Découvrez notre nouvelle campagne pour le don de PLASMA
+                </p>
+              </div>
+            </article>
+          </a>
+
+          <!-- Lien vers la page qui regroupe toutes les actualités -->
+          <a
+            href="https://www.croix-rouge.be/actualites/"
+            class="all-news-link"
+          >
+            Toutes les actualités →
+          </a>
+        </div>
+
+      
+      
+    </section>
+   
+
+
+<!-- SECTION COMMENT NOUS SOUTENIR -->
+<section class="support-methods">
+ 
+  <h2 class="support-title">
+    Le don de sang 
+  </h2>
+
+  <div class="support-cards">
+    <!-- Don de sang -->
+    <div class="support-card">
+      <div class="icon-circle">
+        <img src="images/icon1.svg" alt="Don de sang">
+      </div>
+      <h3>Test : puis-je donner du sang ? </h3>
+      <p>
+        Envie de savoir si vous pouvez donner du sang avant de vous rendre en collecte ?
+      </p>
+      <a href="https://www.donneurdesang.be/" class="support-link"> Faites le test →</a>
+    </div>
+
+    <!-- Don financier -->
+    <div class="support-card">
+      <div class="icon-circle">
+        <img src="images/icon2.svg" alt="Faire un don">
+      </div>
+      <h3>Comment se passe le don de sang ?</h3>
+      <p>
+       Vous désirez donner du sang, mais vous vous demandez comment ça se passe ?
+      </p>
+      <a href="https://faire-un-don.croix-rouge.be/" class="support-link">Les étapes du don →</a>
+    </div>
+
+    <!-- Devenir volontaire -->
+    <div class="support-card">
+      <div class="icon-circle">
+        <img src="images/icon3.svg" alt="Devenir volontaire">
+      </div>
+      <h3>Délai entre 2 dons</h3>
+      <p>
+        Le délai entre deux dons varie en fonction du type de don que vous souhaitez effectuer.
+      </p>
+      <a href="https://volontariat.croix-rouge.be/" class="support-link">Plus d'informations  →</a>
+    </div>
+  </div>
+</section>
+<section class="info-section">
+      <h2 class="section-titlee">Pourquoi donner son sang ?</h2>
+  <div class="card">
+    <img src="images/1.svg" alt="Don de sang">
+    <h3>3 vies</h3>
+    <p>Parce qu'en 30 minutes, vous pouvez sauver 3 vies !</p>
+  </div>
+
+  <div class="card">
+    <img src="images/2.svg" alt="Besoin annuel">
+    <h3>500 000 poches</h3>
+    <p>Parce qu'en Belgique, il faut près de 500 000 poches par an pour faire face aux besoins.</p>
+  </div>
+
+  <div class="card">
+    <img src="images/3.svg" alt="Statistique des donneurs">
+    <h3>1 personne sur 7</h3>
+    <p>Parce que moins d'1 personne sur 10 donne du sang alors qu'1 personne sur 7 en aura un jour besoin.</p>
+  </div>
+
+  <div class="card">
+    <img src="images/4.svg" alt="Sang vital">
+    <h3>Vital</h3>
+    <p>Parce qu'à l'heure actuelle, rien ne remplace le sang.</p>
+  </div>
+</section>
+ <!-- SECTION NOUS AGISSONS -->
+    <section class="action-section">
+      <!-- Introduction de la section : titre et sous-titre -->
+      <div class="action-intro">
+       
+        <h2 class="section-title">
+         Nous pourrions tous un jour en avoir besoin ! 
+        </h2>
+      </div>
+
+      <!-- Bloc 1 : présentation des services de la Croix-Rouge -->
+      <div class="action-block">
+        <!-- Image illustrative à gauche -->
+        <img src="images/actu11.png" alt="Image action 1" />
+
+        <!-- Texte explicatif à droite -->
+        <div class="action-text">
+          <h3>Engager mon entreprise/organisation</h3>
+          <p>
+            Envie de mobiliser votre entreprise, organisation ou école en organisant une collecte de sang ? Contactez-nous et nous vous accompagnerons dans cette belle démarche ! 
+          </p>
+          <!-- Lien vers la page des actions -->
+          <a href="https://www.croix-rouge.be/nous-aidons/" class="action-link">
+            Plus d'informations  →
+          </a>
+        </div>
+      </div>
+
+      <!-- Bloc 2 : appel à l'engagement (volontariat, don de sang, etc.) -->
+      <div class="action-block reverse">
+        <!-- Texte explicatif à gauche (grâce à la classe reverse) -->
+        <div class="action-text">
+          <h3>Activités de la Croix-Rouge</h3>
+          <p>
+           Chaque jour, nos actions concrètes améliorent les conditions d'existence des personnes plus vulnérables, dans l’urgence comme dans la prévoyance. En Communauté francophone, ce sont les Maisons Croix-Rouge qui mènent les actions de terrain.
+          </p>
+          <!-- Lien vers la page pour s'engager -->
+          <a href="https://www.croix-rouge.be/agir/" class="action-link">
+            J’agis →
+          </a>
+        </div>
+
+        <!-- Image illustrative à droite -->
+        <img src="images/actu22.png" alt="Image action 2" />
+      </div>
+    </section>
+
+<script>
+
+window.addEventListener("load", () => {
+  const form = document.querySelector(".newsletter-form");
+  if (form) form.reset();
+});
+
+</script>
+
+
+
+</main>
+<!-- SECTION FOOTER -->
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <img src="images/footer-left-capture.png" alt="Coordonnées Croix-Rouge de Belgique" class="footer-left-img">
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-column">
+        <a href="https://faire-un-don.croix-rouge.be/">Faire un don</a>
+        <a href="https://faire-un-don.croix-rouge.be/legs-et-testaments/">Léguer à la Croix-Rouge</a>
+        <a href="https://sang.croix-rouge.be/">Donner du sang</a>
+        <a href="https://volontariat.croix-rouge.be/">Devenir volontaire</a>
+        <a href="https://formations.croix-rouge.be/">Se former</a>
+        <a href="https://jobs.croix-rouge.be/">Travailler à la Croix-Rouge</a>
+        <a href="https://liens-familiaux.croix-rouge.be/">Retrouver un proche</a>
+      </div>
+      <div class="footer-column">
+        <a href="https://maisons.croix-rouge.be/">Nos maisons Croix-Rouge</a>
+        <a href="https://vestiboutiques.croix-rouge.be/">Nos Vestiboutiques</a>
+        <a href="https://materiel-paramedical.croix-rouge.be/">Notre matériel paramédical</a>
+        <a href="https://www.croix-rouge.be/situations-difficiles/transport-ambulance-non-urgent/">Nos transports</a>
+        <a href="https://aide-alimentaire.croix-rouge.be/">Notre aide alimentaire</a>
+        <a href="https://jeunesse.croix-rouge.be/">La jeunesse</a>
+        <a href="https://action-internationale.croix-rouge.be/">L’action internationale</a>
+      </div>
+      <div class="footer-column">
+        <a href="#">Les acteurs de l’éducation</a>
+        <a href="#">L’accueil & la migration</a>
+        <a href="#">Les entreprises</a>
+        <a href="#">Le droit international humanitaire</a>
+        <div class="footer-column footer-nav-buttons">
+          <a href="#" class="footer-btn">Accueil</a>
+          <a href="#" class="footer-btn">À Propos</a>
+          <a href="#" class="footer-btn">FAQ</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <p>
+        ©2025 Croix-Rouge | Contact | Vie privée | Mentions légales | Presse | CGV | Réalisation: Spade
+      </p>
+      <div class="footer-social">
+        <img src="images/icon-facebook.svg" alt="Facebook">
+        <img src="images/icon-instagram.svg" alt="Instagram">
+        <img src="images/icon-twitter.svg" alt="Twitter">
+        <img src="images/icon-linkedin.svg" alt="LinkedIn">
+        <span class="footer-partner">Avec le soutien de</span>
+        <img src="images/logo-loterie.png" alt="Loterie Nationale">
+      </div>
+    </div>
+  </div>
+  
+</footer>
+  </body>
+ 
+
+</html>
