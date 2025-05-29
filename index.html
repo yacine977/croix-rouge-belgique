@@ -12,280 +12,300 @@
 
   <body>
     <main>
-    <!-- Début du header principal -->
-    <header class="main-header">
-      <!-- Conteneur du logo + boutons -->
-      <div class="container">
-        <!-- Logo de la Croix-Rouge -->
-        <div class="logo">
-          <img src="images/logo-crb.svg" alt="Croix-Rouge de Belgique" />
-        </div>
+      <!-- Début du header principal -->
+      <header class="main-header">
+        <!-- Conteneur du logo + boutons -->
+        <div class="container">
+          <!-- Logo de la Croix-Rouge -->
+          <div class="logo">
+            <img src="images/logo-crb.svg" alt="Croix-Rouge de Belgique" />
+          </div>
 
           <!-- Boutons à droite (Don, Rejoindre, Menu) -->
-        <div class="header-buttons">
-          <a
-            href="https://je-donne.croix-rouge.be/action_sociale/~mon-don"
-            class="btn red"
-            >DON</a
-          >
-          <a href="https://rejoindre.croix-rouge.be/" class="btn red"
-            >REJOINDRE</a
-          >
+          <div class="header-buttons">
+            <a
+              href="https://je-donne.croix-rouge.be/action_sociale/~mon-don"
+              class="btn red"
+              >DON</a
+            >
+            <a href="https://rejoindre.croix-rouge.be/" class="btn red"
+              >REJOINDRE</a
+            >
 
-          <!-- Bouton MENU avec icône burger au-dessus -->
-          <a href="#" class="btn outline">
-            <span class="burger"></span>
-            MENU
-          </a>
+            <!-- Bouton MENU avec icône burger au-dessus -->
+            <a href="#" class="btn outline">
+              <span class="burger"></span>
+              MENU
+            </a>
+          </div>
         </div>
+
+        <!-- Ligne rouge horizontale en bas du header -->
+        <div class="red-line"></div>
+      </header>
+      <!-- Section HERO : image de fond, titre, texte et bouton d'appel à l'action -->
+      <section class="hero-banner">
+        <div class="hero-content">
+          <!-- Petit label au-dessus du titre -->
+          <p class="tagline">ACTION SOCIALE</p>
+
+          <!-- Titre principal du hero -->
+          <h1>UN HIVER SOLIDAIRE AUPRÈS DES PLUS VULNÉRABLES</h1>
+
+          <!-- Paragraphe de description -->
+          <p class="subtitle">
+            En cette période hivernale, la Croix-Rouge répond à l’urgence en
+            inaugurant un nouveau centre d’accueil et intensifie ses activités
+            auprès des personnes sans-abri. En faisant un don, vous sauvez des
+            vies.
+          </p>
+
+          <!-- Bouton rouge "Je fais un don" -->
+          <a
+            href="https://je-donne.croix-rouge.be/Urgences-Internationales/~mon-don?_cv=1"
+            class="btn red hero-btn"
+            >JE FAIS UN DON</a
+          >
+        </div>
+      </section>
+      <!-- Section "testament" avec une image cliquable -->
+      <div class="don-testament-section">
+        <!-- Lien vers la page officielle des legs et testaments (ouvre dans un nouvel onglet) -->
+        <a
+          href="https://faire-un-don.croix-rouge.be/legs-et-testaments/"
+          target="_blank"
+        >
+          <!-- Image promo du testament, centrée et responsive -->
+          <img
+            src="images/testament-banner.png"
+            alt="Faites une place à la Croix-Rouge dans votre testament"
+            class="testament-img"
+          />
+        </a>
       </div>
+      <!-- SECTION ACTUALITÉS RÉCENTES -->
+      <section class="actus-section">
+        <!-- Conteneur global des actualités (mise en page en 2 colonnes) -->
+        <div class="actus-container">
+          <!-- Colonne de gauche : liste des actualités récentes avec liens -->
+          <div class="actus-left">
+            <!-- Titre de la section -->
+            <h4>ACTUALITÉS RÉCENTES</h4>
 
-      <!-- Ligne rouge horizontale en bas du header -->
-      <div class="red-line"></div>
-    </header>
-    <!-- Section HERO : image de fond, titre, texte et bouton d'appel à l'action -->
-    <section class="hero-banner">
-      <div class="hero-content">
-        <!-- Petit label au-dessus du titre -->
-        <p class="tagline">ACTION SOCIALE</p>
+            <!-- ACTU 1 : lien cliquable vers l’article externe -->
+            <a
+              href="https://www.croix-rouge.be/2025/03/12/fermeture-du-train-hostel-des-familles-enfants-et-bebes-menaces-dun-retour-a-la-rue/"
+              target="_blank"
+              class="actus-link"
+            >
+              <article class="actus-item">
+                <!-- Image de l’actu -->
+                <img src="images/actu1.jpg" alt="Photo actu 1" />
+                <!-- Contenu textuel de l’actu -->
+                <div class="actus-text">
+                  <h3 class="title red">
+                    Fermeture du Train Hostel : des familles, enfants et bébés
+                    menacés d’un retour à la rue
+                  </h3>
+                  <p class="meta">
+                    12.03.2025 | <span class="category">Action sociale</span>
+                  </p>
+                  <p class="excerpt">
+                    Alors que l’hiver touche à sa fin, l’inquiétude grandit au
+                    sein des équipes...
+                  </p>
+                </div>
+              </article>
+            </a>
 
-        <!-- Titre principal du hero -->
-        <h1>UN HIVER SOLIDAIRE AUPRÈS DES PLUS VULNÉRABLES</h1>
+            <!-- ACTU 2 -->
+            <a
+              href="https://www.croix-rouge.be/2025/03/04/la-grande-bouquinerie-revient-un-nouveau-chapitre-secrit-a-lancien-musee-mima/"
+              target="_blank"
+              class="actus-link"
+            >
+              <article class="actus-item">
+                <!-- Image de l’actu -->
+                <img src="images/actu2.png" alt="Photo actu 2" />
+                <!-- Contenu textuel de l’actu -->
+                <div class="actus-text">
+                  <h3>
+                    La Grande Bouquinerie revient : un nouveau chapitre s’écrit
+                    à l’ancien musée Mima
+                  </h3>
+                  <p class="meta">
+                    04.03.2025 | <span class="category">Croix-Rouge</span>
+                  </p>
+                  <p class="excerpt">
+                    Après le succès des éditions précédentes à Uccle, la grande
+                    bouquinerie...
+                  </p>
+                </div>
+              </article>
+            </a>
 
-        <!-- Paragraphe de description -->
-        <p class="subtitle">
-          En cette période hivernale, la Croix-Rouge répond à l’urgence en
-          inaugurant un nouveau centre d’accueil et intensifie ses activités
-          auprès des personnes sans-abri. En faisant un don, vous sauvez des
-          vies.
+            <!-- Lien vers la page qui regroupe toutes les actualités -->
+            <a
+              href="https://www.croix-rouge.be/actualites/"
+              class="all-news-link"
+            >
+              Toutes les actualités →
+            </a>
+          </div>
+
+          <!-- Colonne de droite : article mis en avant avec encadré spécial -->
+          <div class="actus-right">
+            <!-- Titre de l’actu en surbrillance -->
+            <h3 class="highlight-title">
+              Reprise des hostilités à Gaza : l’hôpital de campagne de la
+              Croix-Rouge submergé
+            </h3>
+            <!-- Image illustrant l’actu -->
+            <a
+              href="https://action-internationale.croix-rouge.be/2025/05/28/ils-sappelaient-ibrahim-et-ahmad-deux-humanitaires-tues-a-gaza-la-croix-rouge-reagit/"
+              ><img src="images/actu3.jpg" alt="Photo Gaza"
+            /></a>
+            <!-- Description courte -->
+            <p class="highlight-text">
+              Au cours des dernières 36 heures, suite à la reprise des
+              hostilités à Gaza, le personnel de l’hôpital de campagne de la
+              Croix-Rouge a vu affluer un grand nombre de blessés...
+            </p>
+            <!-- Date et catégorie -->
+            <p class="meta">
+              20.03.2025 | <span class="category">Israël/Gaza</span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION NOUS AGISSONS -->
+      <section class="action-section">
+        <!-- Introduction de la section : titre et sous-titre -->
+        <div class="action-intro">
+          <p class="section-subtitle">NOUS AGISSONS</p>
+          <h2 class="section-title">
+            Tous les jours, la Croix-Rouge de Belgique lutte contre la
+            vulnérabilité, dans l’urgence et la prévoyance.
+          </h2>
+        </div>
+
+        <!-- Bloc 1 : présentation des services de la Croix-Rouge -->
+        <div class="action-block">
+          <!-- Image illustrative à gauche -->
+          <img src="images/action1.png" alt="Image action 1" />
+
+          <!-- Texte explicatif à droite -->
+          <div class="action-text">
+            <h3>NOS CHAMPS D’ACTION</h3>
+            <p>
+              Vous souhaitez faire appel à un de nos services en tant que
+              particuliers ou professionnels ou simplement en savoir plus sur
+              nos actions en Belgique et à l’international ? Vous êtes au bon
+              endroit !
+            </p>
+            <!-- Lien vers la page des actions -->
+            <a
+              href="https://www.croix-rouge.be/nous-aidons/"
+              class="action-link"
+            >
+              Je découvre →
+            </a>
+          </div>
+        </div>
+
+        <!-- Bloc 2 : appel à l'engagement (volontariat, don de sang, etc.) -->
+        <div class="action-block reverse">
+          <!-- Texte explicatif à gauche (grâce à la classe reverse) -->
+          <div class="action-text">
+            <h3>AGIR AVEC NOUS</h3>
+            <p>
+              Envie de devenir volontaire, de vous former aux premiers secours
+              ou encore de donner votre sang ? Découvrez toutes les manières
+              d’agir de façon solidaire à nos côtés !
+            </p>
+            <!-- Lien vers la page pour s'engager -->
+            <a href="https://www.croix-rouge.be/agir/" class="action-link">
+              J’agis →
+            </a>
+          </div>
+
+          <!-- Image illustrative à droite -->
+          <img src="images/action2.png" alt="Image action 2" />
+        </div>
+      </section>
+
+      <!-- SECTION SOUTENIR -->
+      <section class="support-2023">
+        <h2>Grâce à votre soutien en 2023</h2>
+        <div class="support-images">
+          <div class="support-box">
+            <img src="images/stats1.png" alt="Aides alimentaires" />
+          </div>
+          <div class="support-box">
+            <img src="images/stats2.png" alt="Rencontres sans-abri" />
+          </div>
+          <div class="support-box">
+            <img src="images/stats3.png" alt="Transports effectués" />
+          </div>
+        </div>
+      </section>
+      <!-- SECTION COMMENT NOUS SOUTENIR -->
+      <section class="support-methods">
+        <p class="support-subtitle">
+          COMMENT NOUS SOUTENIR, TOUT AU LONG DE L'ANNÉE
         </p>
-
-        <!-- Bouton rouge "Je fais un don" -->
-        <a href="https://je-donne.croix-rouge.be/Urgences-Internationales/~mon-don?_cv=1" class="btn red hero-btn">JE FAIS UN DON</a>
-      </div>
-    </section>
-    <!-- Section "testament" avec une image cliquable -->
-    <section class="don-testament-section">
-      <!-- Lien vers la page officielle des legs et testaments (ouvre dans un nouvel onglet) -->
-      <a
-        href="https://faire-un-don.croix-rouge.be/legs-et-testaments/"
-        target="_blank"
-      >
-        <!-- Image promo du testament, centrée et responsive -->
-        <img
-          src="images/testament-banner.png"
-          alt="Faites une place à la Croix-Rouge dans votre testament"
-          class="testament-img"
-        />
-      </a>
-    </section>
-    <!-- SECTION ACTUALITÉS RÉCENTES -->
-    <section class="actus-section">
-      <!-- Conteneur global des actualités (mise en page en 2 colonnes) -->
-      <div class="actus-container">
-        <!-- Colonne de gauche : liste des actualités récentes avec liens -->
-        <div class="actus-left">
-          <!-- Titre de la section -->
-          <h4>ACTUALITÉS RÉCENTES</h4>
-
-          <!-- ACTU 1 : lien cliquable vers l’article externe -->
-          <a
-            href="https://www.croix-rouge.be/2025/03/12/fermeture-du-train-hostel-des-familles-enfants-et-bebes-menaces-dun-retour-a-la-rue/"
-            target="_blank"
-            class="actus-link"
-          >
-            <article class="actus-item">
-              <!-- Image de l’actu -->
-              <img src="images/actu1.jpg" alt="Photo actu 1" />
-              <!-- Contenu textuel de l’actu -->
-              <div class="actus-text">
-                <h3 class="title red">
-                  Fermeture du Train Hostel : des familles, enfants et bébés
-                  menacés d’un retour à la rue
-                </h3>
-                <p class="meta">
-                  12.03.2025 | <span class="category">Action sociale</span>
-                </p>
-                <p class="excerpt">
-                  Alors que l’hiver touche à sa fin, l’inquiétude grandit au
-                  sein des équipes...
-                </p>
-              </div>
-            </article>
-          </a>
-
-          <!-- ACTU 2 -->
-          <a
-            href="https://www.croix-rouge.be/2025/03/04/la-grande-bouquinerie-revient-un-nouveau-chapitre-secrit-a-lancien-musee-mima/"
-            target="_blank"
-            class="actus-link"
-          >
-            <article class="actus-item">
-              <!-- Image de l’actu -->
-              <img src="images/actu2.png" alt="Photo actu 2" />
-              <!-- Contenu textuel de l’actu -->
-              <div class="actus-text">
-                <h3>
-                  La Grande Bouquinerie revient : un nouveau chapitre s’écrit à
-                  l’ancien musée Mima
-                </h3>
-                <p class="meta">
-                  04.03.2025 | <span class="category">Croix-Rouge</span>
-                </p>
-                <p class="excerpt">
-                  Après le succès des éditions précédentes à Uccle, la grande
-                  bouquinerie...
-                </p>
-              </div>
-            </article>
-          </a>
-
-          <!-- Lien vers la page qui regroupe toutes les actualités -->
-          <a
-            href="https://www.croix-rouge.be/actualites/"
-            class="all-news-link"
-          >
-            Toutes les actualités →
-          </a>
-        </div>
-
-        <!-- Colonne de droite : article mis en avant avec encadré spécial -->
-        <div class="actus-right">
-          <!-- Titre de l’actu en surbrillance -->
-          <h3 class="highlight-title">
-            Reprise des hostilités à Gaza : l’hôpital de campagne de la
-            Croix-Rouge submergé
-          </h3>
-          <!-- Image illustrant l’actu -->
-          <a href="https://action-internationale.croix-rouge.be/2025/05/28/ils-sappelaient-ibrahim-et-ahmad-deux-humanitaires-tues-a-gaza-la-croix-rouge-reagit/"><img src="images/actu3.jpg" alt="Photo Gaza" /></a>
-          <!-- Description courte -->
-          <p class="highlight-text">
-            Au cours des dernières 36 heures, suite à la reprise des hostilités
-            à Gaza, le personnel de l’hôpital de campagne de la Croix-Rouge a vu
-            affluer un grand nombre de blessés...
-          </p>
-          <!-- Date et catégorie -->
-          <p class="meta">
-            20.03.2025 | <span class="category">Israël/Gaza</span>
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- SECTION NOUS AGISSONS -->
-    <section class="action-section">
-      <!-- Introduction de la section : titre et sous-titre -->
-      <div class="action-intro">
-        <p class="section-subtitle">NOUS AGISSONS</p>
-        <h2 class="section-title">
-          Tous les jours, la Croix-Rouge de Belgique lutte contre la
-          vulnérabilité, dans l’urgence et la prévoyance.
+        <h2 class="support-title">
+          Chacun et chacune à notre manière, contribuons à lutter contre la
+          vulnérabilité.
         </h2>
-      </div>
 
-      <!-- Bloc 1 : présentation des services de la Croix-Rouge -->
-      <div class="action-block">
-        <!-- Image illustrative à gauche -->
-        <img src="images/action1.png" alt="Image action 1" />
+        <div class="support-cards">
+          <!-- Don de sang -->
+          <div class="support-card">
+            <div class="icon-circle">
+              <img src="images/icon-blood.svg" alt="Don de sang" />
+            </div>
+            <h3>Donnez votre sang</h3>
+            <p>
+              Une personne sur 10 donne son sang alors qu'une personne sur 7 en
+              aura un jour besoin.
+            </p>
+            <a href="donner-son-sang.html" class="support-link"
+              >Je donne mon sang →</a
+            >
+          </div>
 
-        <!-- Texte explicatif à droite -->
-        <div class="action-text">
-          <h3>NOS CHAMPS D’ACTION</h3>
-          <p>
-            Vous souhaitez faire appel à un de nos services en tant que
-            particuliers ou professionnels ou simplement en savoir plus sur nos
-            actions en Belgique et à l’international ? Vous êtes au bon endroit
-            !
-          </p>
-          <!-- Lien vers la page des actions -->
-          <a href="https://www.croix-rouge.be/nous-aidons/" class="action-link">
-            Je découvre →
-          </a>
+          <!-- Don financier -->
+          <div class="support-card">
+            <div class="icon-circle">
+              <img src="images/icon-donation.svg" alt="Faire un don" />
+            </div>
+            <h3>Faites un don</h3>
+            <p>
+              Vos dons et vos legs permettent à nos bénévoles de lutter chaque
+              jour contre la faim, le froid et la solitude.
+            </p>
+            <a href="faire-un-don.html" class="support-link"
+              >Je fais un don →</a
+            >
+          </div>
+
+          <!-- Devenir volontaire -->
+          <div class="support-card">
+            <div class="icon-circle">
+              <img src="images/icon-volunteer.svg" alt="Devenir volontaire" />
+            </div>
+            <h3>Devenez volontaire</h3>
+            <p>
+              Un peu, beaucoup, passionnément… Votre temps fera la différence !
+            </p>
+            <a href="devenir-volontaire.html" class="support-link"
+              >Je m’engage →</a
+            >
+          </div>
         </div>
-      </div>
-
-      <!-- Bloc 2 : appel à l'engagement (volontariat, don de sang, etc.) -->
-      <div class="action-block reverse">
-        <!-- Texte explicatif à gauche (grâce à la classe reverse) -->
-        <div class="action-text">
-          <h3>AGIR AVEC NOUS</h3>
-          <p>
-            Envie de devenir volontaire, de vous former aux premiers secours ou
-            encore de donner votre sang ? Découvrez toutes les manières d’agir
-            de façon solidaire à nos côtés !
-          </p>
-          <!-- Lien vers la page pour s'engager -->
-          <a href="https://www.croix-rouge.be/agir/" class="action-link">
-            J’agis →
-          </a>
-        </div>
-
-        <!-- Image illustrative à droite -->
-        <img src="images/action2.png" alt="Image action 2" />
-      </div>
-    </section>
-</section>
-<!-- SECTION SOUTENIR -->
-<section class="support-2023">
-  <h2>Grâce à votre soutien en 2023</h2>
-  <div class="support-images">
-    <div class="support-box">
-      <img src="images/stats1.png" alt="Aides alimentaires">
-    </div>
-    <div class="support-box">
-      <img src="images/stats2.png" alt="Rencontres sans-abri">
-    </div>
-    <div class="support-box">
-      <img src="images/stats3.png" alt="Transports effectués">
-    </div>
-  </div>
-
-</section>
-<!-- SECTION COMMENT NOUS SOUTENIR -->
-<section class="support-methods">
-  <p class="support-subtitle">COMMENT NOUS SOUTENIR, TOUT AU LONG DE L'ANNÉE</p>
-  <h2 class="support-title">
-    Chacun et chacune à notre manière, contribuons à lutter contre la vulnérabilité.
-  </h2>
-
-  <div class="support-cards">
-    <!-- Don de sang -->
-    <div class="support-card">
-      <div class="icon-circle">
-        <img src="images/icon-blood.svg" alt="Don de sang">
-      </div>
-      <h3>Donnez votre sang</h3>
-      <p>
-        Une personne sur 10 donne son sang alors qu'une personne sur 7 en aura un jour besoin.
-      </p>
-      <a href="donner-son-sang.html" class="support-link">Je donne mon sang →</a>
-    </div>
-
-    <!-- Don financier -->
-    <div class="support-card">
-      <div class="icon-circle">
-        <img src="images/icon-donation.svg" alt="Faire un don">
-      </div>
-      <h3>Faites un don</h3>
-      <p>
-        Vos dons et vos legs permettent à nos bénévoles de lutter chaque jour contre la faim, le froid et la solitude.
-      </p>
-      <a href="faire-un-don.html" class="support-link">Je fais un don →</a>
-    </div>
-
-    <!-- Devenir volontaire -->
-    <div class="support-card">
-      <div class="icon-circle">
-        <img src="images/icon-volunteer.svg" alt="Devenir volontaire">
-      </div>
-      <h3>Devenez volontaire</h3>
-      <p>
-        Un peu, beaucoup, passionnément… Votre temps fera la différence !
-      </p>
-      <a href="devenir-volontaire.html" class="support-link">Je m’engage →</a>
-    </div>
-  </div>
-</section>
- <!-- SECTION FAQ -->
+      </section>
+      <!-- SECTION FAQ -->
       <section class="faq-section">
         <p class="faq-subtitle">CONSULTEZ NOS FAQ</p>
         <h2 class="faq-title">Vous vous posez une question ?</h2>
@@ -497,61 +517,61 @@
           <!-- Répéter autant de .faq-item que nécessaire -->
         </div>
       </section>
-<!-- SECTION NEWSLETTER -->
-<section class="newsletter-section">
-  
+      <!-- SECTION NEWSLETTER -->
+      <section class="newsletter-section">
+        <div class="newsletter-container">
+          <p class="newsletter-subtitle">RESTONS EN CONTACT</p>
 
-  <div class="newsletter-container">
-    <p class="newsletter-subtitle">RESTONS EN CONTACT</p>
+          <h2 class="newsletter-title">
+            Inscrivez-vous à notre newsletter et restez informé·e de nos
+            dernières actions, de nos besoins et de notre actualité.
+          </h2>
 
-    <h2 class="newsletter-title">Inscrivez-vous à notre newsletter et restez informé·e de nos dernières actions, de nos besoins et de notre actualité.</h2>
-    
-    <form class="newsletter-form" autocomplete="off">
-      <label>
-        Votre adresse email *
-        <input type="email" required>
-      </label>
+          <form class="newsletter-form" autocomplete="off">
+            <label>
+              Votre adresse email *
+              <input type="email" required />
+            </label>
 
-      <label>
-        Votre prénom *
-        <input type="text" required>
-      </label>
+            <label>
+              Votre prénom *
+              <input type="text" required />
+            </label>
 
-      <label>
-        Votre nom *
-        <input type="text" required>
-      </label>
+            <label>
+              Votre nom *
+              <input type="text" required />
+            </label>
 
-      <div class="captcha-container">
-        <p><strong>Je ne suis pas un robot</strong></p>
-        <div class="captcha-box">
-          <span class="captcha-code">GSV3^w</span>
-          <button type="button" class="refresh-captcha">🔄</button>
+            <div class="captcha-container">
+              <p><strong>Je ne suis pas un robot</strong></p>
+              <div class="captcha-box">
+                <span class="captcha-code">GSV3^w</span>
+                <button type="button" class="refresh-captcha">🔄</button>
+              </div>
+              <small class="captcha-label">Captcha</small>
+            </div>
+
+            <p class="newsletter-privacy">
+              La Croix-Rouge souhaite vous informer sur les projets que vous
+              soutenez, sur les services qu’elle met à votre disposition, et
+              garder une relation active avec vous. Pour en savoir plus sur la
+              manière dont vos données sont traitées, rendez-vous sur notre page
+              Vie Privée.
+            </p>
+
+            <button type="submit" class="newsletter-submit">ENVOYER</button>
+          </form>
         </div>
-        <small class="captcha-label">Captcha</small>
-      </div>
-
-      <p class="newsletter-privacy">
-        La Croix-Rouge souhaite vous informer sur les projets que vous soutenez, sur les services qu’elle met à votre disposition, et garder une relation active avec vous. Pour en savoir plus sur la manière dont vos données sont traitées, rendez-vous sur notre page Vie Privée.
-      </p>
-
-      <button type="submit" class="newsletter-submit">ENVOYER</button>
-    </form>
-  </div>
-</section>
-<script>
-
-window.addEventListener("load", () => {
-  const form = document.querySelector(".newsletter-form");
-  if (form) form.reset();
-});
-
-</script>
-
-
-
-</main>
- <!-- SECTION FOOTER -->
+      </section>
+      <script>
+        window.addEventListener("load", () => {
+          const form = document.querySelector(".newsletter-form");
+          if (form) form.reset();
+        });
+      </script>
+    </main>
+    <!-- SECTION FOOTER -->
     <footer class="site-footer">
       <div class="footer-content">
         <div class="footer-left">
@@ -640,6 +660,4 @@ window.addEventListener("load", () => {
       </div>
     </footer>
   </body>
- 
-
 </html>
