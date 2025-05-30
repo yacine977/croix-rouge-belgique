@@ -838,6 +838,14 @@ main {
   margin-top: 8px; /* espace entre le label et l'input */
 }
 
+.newsletter-form input[type="text"]:focus,
+.newsletter-form input[type="email"]:focus,
+.newsletter-form textarea:focus {
+  background-color: #e0f7fa;
+  outline: none;
+  border: 2px solid #0288d1;
+}
+
 .captcha-container {
   text-align: left;
   margin-top: 30px;
@@ -1803,4 +1811,129 @@ nav {
 
   margin-bottom: 30px;
   font-weight: bold;
+}
+
+/* 1. Mise en page flexible avec Flexbox */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px; /* Largeur max pour desktop */
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+/* 2. Blocs flexibles */
+.sidebar,
+.content {
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+/* 3. Rendre images et vidéos adaptatifs */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 4. Styles généraux */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px; /* Taille par défaut pour desktop */
+  margin: 0;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* 5. Media Queries pour adaptabilité */
+
+/* Smartphones (jusqu’à 600px) */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .container {
+    flex-direction: column; /* Empilement vertical */
+    padding: 0;
+  }
+
+  .sidebar,
+  .content {
+    width: 100%; /* pleine largeur */
+    padding: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+/* Tablettes (601px à 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  body {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    width: 30%;
+  }
+
+  .content {
+    width: 65%;
+  }
+}
+
+/* Desktop (plus de 900px) */
+@media (min-width: 901px) {
+  body {
+    font-size: 18px;
+    padding: 30px;
+  }
+
+  .sidebar {
+    width: 25%;
+  }
+
+  .content {
+    width: 70%;
+  }
+}
+
+.tooltip {
+  position: absolute; /* positionnement absolu par rapport à .main-header */
+  top: 50%; /* par exemple, 50% depuis le haut du header */
+  right: 20px; /* 20px depuis la droite */
+  transform: translateY(-50%); /* pour centrer verticalement le tooltip */
+  background-color: #e2001a; /* couleur de fond Rouge Croix-Rouge */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  z-index: 1100; /* au-dessus des autres éléments */
+  cursor: default;
+}
+
+.responsive-iframe {
+  width: 100%; /* largeur adaptative */
+  max-width: 800px; /* optionnel, limite la largeur max */
+  border: none; /* supprime la bordure */
+}
+
+.responsive-iframe {
+  width: 100%;
+  max-width: 800px; /* ou toute autre largeur max souhaitée */
+  border: none; /* supprime la bordure */
+  display: block; /* optionnel pour éviter les espaces blancs */
 }

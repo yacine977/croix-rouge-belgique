@@ -8,6 +8,47 @@
     <!-- Lien vers la feuille de style externe -->
     <link rel="stylesheet" href="css/style.css" />
     <title>Croix-Rouge de belgique</title>
+    <style>
+  .planning-actions {
+    max-width: 800px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+
+  .planning-actions h2 {
+    text-align: center;
+    color: #cc0000; /* Rouge Croix-Rouge */
+    margin-bottom: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  th, td {
+    border: 1px solid #cc0000;
+    padding: 12px 15px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  thead th {
+    background-color: #f7d7d7;
+    color: #a80000;
+    font-weight: 600;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #fef5f5;
+  }
+
+  tbody tr:hover {
+    background-color: #ffd6d6;
+  }
+</style>
   </head>
 
   <body>
@@ -39,7 +80,8 @@
             </a>
           </div>
         </div>
-
+ <!-- Bloc positionné absolument, enfant de .main-header -->
+  <div class="tooltip">Info</div>
         <!-- Ligne rouge horizontale en bas du header -->
         <div class="red-line"></div>
       </header>
@@ -103,10 +145,14 @@
                 <img src="images/actu1.jpg" alt="Photo actu 1" />
                 <!-- Contenu textuel de l’actu -->
                 <div class="actus-text">
-                  <h3 class="title red">
-                    Fermeture du Train Hostel : des familles, enfants et bébés
-                    menacés d’un retour à la rue
-                  </h3>
+              <h3 class="title red">
+  Fermeture du Train Hostel : <em>des familles, enfants et bébés</em> menacés d’un retour à la rue
+</h3>
+
+<h3 class="title red">
+  Fermeture du Train Hostel : <em>des familles, enfants et bébés</em> menacés d’un retour à la rue
+</h3>
+
                   <p class="meta">
                     12.03.2025 | <span class="category">Action sociale</span>
                   </p>
@@ -178,6 +224,15 @@
           </div>
         </div>
       </section>
+      <!-- Ajout de l'aside -->
+<aside class="info-aside">
+  <h4>Infos complémentaires</h4>
+  <p>
+    Découvrez nos dernières campagnes et événements à venir.  
+    Votre soutien fait toute la différence.
+  </p>
+  <a href="https://www.croix-rouge.be/agir/" class="btn red">Participer</a>
+</aside>
       <!-- SECTION NOUS AGISSONS -->
       <section class="action-section">
         <!-- Introduction de la section : titre et sous-titre -->
@@ -305,6 +360,45 @@
           </div>
         </div>
       </section>
+      <section class="planning-actions">
+  <h2>Planning des actions solidaires</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Jour</th>
+        <th colspan="2">Actions en journée</th>
+        <th>Soirée</th>
+      </tr>
+      <tr>
+        <th></th>
+        <th>Collecte</th>
+        <th>Accueil & Soutien</th>
+        <th>Veillée</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lundi</td>
+        <td>Distribution alimentaire</td>
+        <td rowspan="2">Centre d’accueil</td>
+        <td>Réunion bénévoles</td>
+      </tr>
+      <tr>
+        <td>Mardi</td>
+        <td>Collecte de vêtements</td>
+        <td>Atelier sensibilisation</td>
+      </tr>
+      <tr>
+        <td>Mercredi</td>
+        <td colspan="2">Journée portes ouvertes</td>
+        <td>Conférence publique</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+
       <!-- SECTION FAQ -->
       <section class="faq-section">
         <p class="faq-subtitle">CONSULTEZ NOS FAQ</p>
@@ -326,6 +420,7 @@
             </div>
 
             <div class="faq-answer">
+              <article>
               Depuis le 1er janvier 2024, un nouveau texte législatif (voté le
               28 décembre 2023) exige des organisations caritatives agréées,
               comme la Croix-Rouge de Belgique, qu’elles inscrivent le numéro de
@@ -337,6 +432,7 @@
               laquelle vous permet de bénéficier d’une déduction fiscale pouvant
               atteindre 45 % du montant de vos dons. Vous pouvez nous la
               transmettre via notre formulaire en ligne disponible ici.
+              </article>
             </div>
           </div>
 
@@ -527,49 +623,59 @@
             dernières actions, de nos besoins et de notre actualité.
           </h2>
 
-          <form class="newsletter-form" autocomplete="off">
-            <label>
-              Votre adresse email *
-              <input type="email" required />
-            </label>
+        <form class="newsletter-form" autocomplete="off">
+  <label for="email">Votre adresse email *</label>
+  <input type="email" id="email" required />
 
-            <label>
-              Votre prénom *
-              <input type="text" required />
-            </label>
+  <label for="prenom">Votre prénom *</label>
+  <input type="text" id="prenom" required />
 
-            <label>
-              Votre nom *
-              <input type="text" required />
-            </label>
+  <label for="nom">Votre nom *</label>
+  <input type="text" id="nom" required />
 
-            <div class="captcha-container">
-              <p><strong>Je ne suis pas un robot</strong></p>
-              <div class="captcha-box">
-                <span class="captcha-code">GSV3^w</span>
-                <button type="button" class="refresh-captcha">🔄</button>
-              </div>
-              <small class="captcha-label">Captcha</small>
-            </div>
+  <label for="commentaire">Votre message</label>
+  <textarea id="commentaire" rows="4"></textarea>
 
-            <p class="newsletter-privacy">
-              La Croix-Rouge souhaite vous informer sur les projets que vous
-              soutenez, sur les services qu’elle met à votre disposition, et
-              garder une relation active avec vous. Pour en savoir plus sur la
-              manière dont vos données sont traitées, rendez-vous sur notre page
-              Vie Privée.
-            </p>
+  <fieldset>
+    <legend>Choisissez votre sexe *</legend>
+    <label><input type="radio" name="sexe" value="homme" required /> Homme</label>
+    <label><input type="radio" name="sexe" value="femme" required /> Femme</label>
+  </fieldset>
 
-            <button type="submit" class="newsletter-submit">ENVOYER</button>
-          </form>
+  <label><input type="checkbox" required /> J’accepte la politique de confidentialité</label>
+
+  <label for="pays">Votre pays</label>
+  <select id="pays">
+    <option value="">Sélectionnez un pays</option>
+    <option value="be">Belgique</option>
+    <option value="fr">France</option>
+    <option value="ch">Suisse</option>
+  </select>
+
+  <div class="captcha-container">
+    <p><strong>Je ne suis pas un robot</strong></p>
+    <div class="captcha-box">
+      <span class="captcha-code">GSV3^w</span>
+      <button type="button" class="refresh-captcha">🔄</button>
+    </div>
+    <small class="captcha-label">Captcha</small>
+  </div>
+
+  <p class="newsletter-privacy">
+    La Croix-Rouge souhaite vous informer sur les projets que vous soutenez...
+  </p>
+
+  <button type="submit" class="newsletter-submit">ENVOYER</button>
+  <button type="reset" class="newsletter-reset">ANNULER</button>
+</form>
+
         </div>
       </section>
-      <script>
-        window.addEventListener("load", () => {
-          const form = document.querySelector(".newsletter-form");
-          if (form) form.reset();
-        });
-      </script>
+      </section> <!-- fin de action-section -->
+
+
+
+ <script src="js/faq-toggle.js" defer></script>
     </main>
     <!-- SECTION FOOTER -->
     <footer class="site-footer">
