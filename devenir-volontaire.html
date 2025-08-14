@@ -43,32 +43,28 @@
 
       <!-- Ligne rouge horizontale en bas du header -->
       <div class="red-line"></div>
-      <!-- Barre de navigation secondaire -->
-      <nav class="don-submenu">
-        <a href="#" class="nav-link active"
-          ><i class="icon"></i>Le Volontariat</a
-        >
-        <a
-          href="https://faire-un-don.croix-rouge.be/don-en-ligne/"
-          class="nav-link"
-        ></a>
-        <a
-          href="https://volontariat.croix-rouge.be/tendre-la-main/"
-          class="nav-link"
-          >TYPES DE Volontariat</a
-        >
-        <a href="https://volontariat.croix-rouge.be/offres/" class="nav-link"
-          >ANNONCES</a
-        >
-        <a
-          href="https://volontariat.croix-rouge.be/sessions-info/"
-          class="nav-link"
-          >SESSION D'INFO</a
-        >
-        <a href="https://volontariat.croix-rouge.be/faq/" class="nav-link"
-          >FAQ</a
-        >
-      </nav>
+    <!-- MENU PRINCIPAL -->
+<nav class="main-nav">
+  <ul>
+    <!-- Liens vers les pages -->
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="devenir-volontaire.html">Devenir volontaire</a></li>
+    <li><a href="donner-son-sang.html">Donner son sang</a></li>
+    <li><a href="faire-un-don.html">Faire un don</a></li>
+    <li><a href="retrouver-un-proche.html">Retrouver un proche</a></li>
+    <li><a href="trouver-un-job.html">Trouver un job</a></li>
+
+    <!-- Liens internes vers les sections de cette page -->
+    <li><a href="#volontariat-section">Volontariat</a></li>
+    <li><a href="#don-nature">Don en nature</a></li>
+    <li><a href="#don-legs">Don par legs</a></li>
+    <li><a href="#partenaire-section">Partenaires</a></li>
+    <li><a href="#faq-section">FAQ</a></li>
+    <li><a href="#newsletter-section">Newsletter</a></li>
+    <li><a href="#footer-section">Footer</a></li>
+  </ul>
+</nav>
+
     </header>
     <main style="margin-top: 80px">
       <section class="hero-volontariat">
@@ -109,7 +105,7 @@
         </div>
       </div>
 
-      <section class="volontariat-section">
+      <section class="volontariat-section" id="volontariat-section"  >
         <h2 class="volontariat-subtitle">LE VOLONTARIAT QUI VOUS RESSEMBLE</h2>
         <p class="volontariat-description">
           Découvrez les nombreuses manières de faire la différence aux côtés de
@@ -118,7 +114,7 @@
         </p>
       </section>
 
-      <section class="don-nature">
+      <section class="don-nature" id="don-nature" >
         <div class="don-nature-image">
           <img
             src="images/personnes-fragilisées.jpg"
@@ -138,7 +134,7 @@
           >
         </div>
       </section>
-      <section class="don-legs">
+      <section class="don-legs" id="don-legs">
         <div class="don-legs-content">
           <h3>PORTER SECOURS</h3>
           <p>
@@ -158,7 +154,7 @@
           />
         </div>
       </section>
-      <section class="partenaire-section">
+      <section class="partenaire-section" id="partenaire-section">
         <div class="partenaire-image">
           <img src="images/former-animer.jpg" alt="Partenariat entreprise" />
         </div>
@@ -176,7 +172,7 @@
         </div>
       </section>
 
-      <section class="don-nature">
+      <section class="don-nature" >
         <div class="don-nature-content">
           <h3>GÉRER ET COORDONNER</h3>
           <p>
@@ -264,7 +260,7 @@
         </div>
       </section>
       <!-- SECTION FAQ -->
-      <section class="faq-section">
+      <section class="faq-section" id="faq-section">
         <p class="faq-subtitle">CONSULTEZ NOS FAQ</p>
         <h2 class="faq-title">Vous vous posez une question ?</h2>
 
@@ -476,7 +472,7 @@
         </div>
       </section>
       <!-- SECTION NEWSLETTER -->
-      <section class="newsletter-section">
+      <section class="newsletter-section" id="newsletter-section">
         <div class="newsletter-container">
           <p class="newsletter-subtitle">RESTONS EN CONTACT</p>
 
@@ -530,7 +526,7 @@
       </script>
     </main>
     <!-- SECTION FOOTER -->
-    <footer class="site-footer">
+    <footer class="site-footer" id="site-footer">
       <div class="footer-content">
         <div class="footer-left">
           <img
