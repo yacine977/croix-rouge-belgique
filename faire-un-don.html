@@ -27,47 +27,36 @@
             >REJOINDRE</a
           >
 
-          <!-- Bouton MENU avec icône burger au-dessus -->
-          <a href="#" class="btn outline">
-            <span class="burger"></span>
-            MENU
-          </a>
+         
         </div>
         <!-- Barre de navigation secondaire -->
       </div>
 
       <!-- Ligne rouge horizontale en bas du header -->
       <div class="red-line"></div>
-      <!-- Barre de navigation secondaire -->
-      <nav class="don-submenu">
-        <a href="#" class="nav-link active"
-          ><i class="icon">💳</i> FAIRE UN DON</a
-        >
-        <a
-          href="https://faire-un-don.croix-rouge.be/don-en-ligne/"
-          class="nav-link"
-          >DON EN LIGNE</a
-        >
-        <a href="https://actions.croix-rouge.be/" class="nav-link"
-          >ACTIONS RÉCOLTE DE FONDS</a
-        >
-        <a
-          href="https://faire-un-don.croix-rouge.be/legs-et-testaments/"
-          class="nav-link"
-          >LEGS ET TESTAMENTS</a
-        >
-        <a
-          href="https://faire-un-don.croix-rouge.be/vos-dons-en-action/"
-          class="nav-link"
-          >VOS DONS EN ACTION</a
-        >
-        <a href="https://entreprises.croix-rouge.be/" class="nav-link"
-          >PARTENARIATS ENTREPRISES</a
-        >
-        <a href="https://faire-un-don.croix-rouge.be/faq/" class="nav-link"
-          >FAQ</a
-        >
-      </nav>
+      <!-- MENU PRINCIPAL -->
+<nav class="main-nav">
+  <ul>
+    <!-- Liens vers les pages -->
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="devenir-volontaire.html">Devenir volontaire</a></li>
+    <li><a href="donner-son-sang.html">Donner son sang</a></li>
+    <li><a href="faire-un-don.html">Faire un don</a></li>
+    <li><a href="retrouver-un-proche.html">Retrouver un proche</a></li>
+    <li><a href="trouver-un-job.html">Trouver un job</a></li>
+
+    <!-- Liens internes vers les sections de cette page -->
+    <li><a href="#don-actions">Actions de don</a></li>
+    <li><a href="#don-nature">Don en nature</a></li>
+    <li><a href="#don-legs">Don par legs</a></li>
+    <li><a href="#partenaire-section">Partenaires</a></li>
+    <li><a href="#collecte-section">Collectes</a></li>
+    <li><a href="#faq-section">FAQ</a></li>
+    <li><a href="#newsletter-section">Newsletter</a></li>
+    <li><a href="#site-footer">Footer</a></li>
+  </ul>
+</nav>
+
     </header>
     <main style="margin-top: 80px">
       <section class="hero-don">
@@ -92,7 +81,7 @@
           </div>
         </div>
       </section>
-      <section class="don-actions">
+      <section class="don-actions" id="don-actions">
         <div class="don-card">
           <img src="images/inondations.jpg" alt="Inondations en Espagne" />
           <h3>Inondations en Espagne</h3>
@@ -135,7 +124,7 @@
           >
         </div>
       </section>
-      <section class="don-nature">
+      <section class="don-nature" id="don-nature">
         <div class="don-nature-content">
           <h3>DONS EN NATURE</h3>
           <p>
@@ -156,7 +145,7 @@
           />
         </div>
       </section>
-      <section class="don-legs">
+      <section class="don-legs" id="don-legs">
         <div class="don-legs-image">
           <img
             src="images/legs-testament.jpg"
@@ -177,7 +166,7 @@
           >
         </div>
       </section>
-      <section class="partenaire-section">
+      <section class="partenaire-section" id="partenaire-section">
         <div class="partenaire-content">
           <h3>PARTENARIAT ENTREPRISES</h3>
           <p>
@@ -196,7 +185,7 @@
           />
         </div>
       </section>
-      <section class="collecte-section">
+      <section class="collecte-section" id="collecte-section">
         <div class="collecte-image">
           <img
             src="images/collecte-don.jpg"
@@ -216,7 +205,7 @@
         </div>
       </section>
       <!-- SECTION FAQ -->
-      <section class="faq-section">
+      <section class="faq-section" id="faq-section">
         <p class="faq-subtitle">CONSULTEZ NOS FAQ</p>
         <h2 class="faq-title">Vous vous posez une question ?</h2>
 
@@ -428,7 +417,7 @@
         </div>
       </section>
       <!-- SECTION NEWSLETTER -->
-      <section class="newsletter-section">
+      <section class="newsletter-section" id="newsletter-section">
         <div class="newsletter-container">
           <p class="newsletter-subtitle">RESTONS EN CONTACT</p>
 
@@ -482,7 +471,7 @@
       </script>
     </main>
     <!-- SECTION FOOTER -->
-    <footer class="site-footer">
+    <footer class="site-footer" id="site-footer">
       <div class="footer-content">
         <div class="footer-left">
           <img
