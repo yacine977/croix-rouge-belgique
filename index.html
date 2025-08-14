@@ -73,11 +73,7 @@
               >REJOINDRE</a
             >
 
-            <!-- Bouton MENU avec icône burger au-dessus -->
-            <a href="#" class="btn outline">
-              <span class="burger"></span>
-              MENU
-            </a>
+            
           </div>
         </div>
  <!-- Bloc positionné absolument, enfant de .main-header -->
@@ -85,6 +81,31 @@
         <!-- Ligne rouge horizontale en bas du header -->
         <div class="red-line"></div>
       </header>
+      <!-- MENU PRINCIPAL -->
+<nav class="main-nav">
+  <ul>
+    <!-- Liens vers les pages -->
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="devenir-volontaire.html">Devenir volontaire</a></li>
+    <li><a href="donner-son-sang.html">Donner son sang</a></li>
+    <li><a href="faire-un-don.html">Faire un don</a></li>
+    <li><a href="retrouver-un-proche.html">Retrouver un proche</a></li>
+    <li><a href="trouver-un-job.html">Trouver un job</a></li>
+
+    <!-- Liens internes vers des sections de la page -->
+     <!-- Liens internes vers des sections de la page -->
+<li><a href="#action-section">Nous agissons</a></li>
+<li><a href="#support-2023">Soutenir</a></li>
+<li><a href="#support-methods">Comment nous soutenir</a></li>
+<li><a href="#planning-actions">Planning des actions</a></li>
+<li><a href="#faq-section">FAQ</a></li>
+<li><a href="#newsletter-section">Newsletter</a></li>
+<li><a href="#footer-section">Footer</a></li>
+
+
+  </ul>
+</nav>
+
       <!-- Section HERO : image de fond, titre, texte et bouton d'appel à l'action -->
       <section class="hero-banner">
         <div class="hero-content">
@@ -126,7 +147,7 @@
         </a>
       </div>
       <!-- SECTION ACTUALITÉS RÉCENTES -->
-      <section class="actus-section">
+      <section class="actus-section"  id="action-section">
         <!-- Conteneur global des actualités (mise en page en 2 colonnes) -->
         <div class="actus-container">
           <!-- Colonne de gauche : liste des actualités récentes avec liens -->
@@ -290,7 +311,7 @@
       </section>
 
       <!-- SECTION SOUTENIR -->
-      <section class="support-2023">
+      <section class="support-2023" id="support-2023">
         <h2>Grâce à votre soutien en 2023</h2>
         <div class="support-images">
           <div class="support-box">
@@ -305,7 +326,7 @@
         </div>
       </section>
       <!-- SECTION COMMENT NOUS SOUTENIR -->
-      <section class="support-methods">
+      <section class="support-methods" id="support-methods">
         <p class="support-subtitle">
           COMMENT NOUS SOUTENIR, TOUT AU LONG DE L'ANNÉE
         </p>
@@ -400,7 +421,7 @@
 
 
       <!-- SECTION FAQ -->
-      <section class="faq-section">
+      <section class="faq-section" id="faq-section">
         <p class="faq-subtitle">CONSULTEZ NOS FAQ</p>
         <h2 class="faq-title">Vous vous posez une question ?</h2>
 
@@ -617,7 +638,7 @@
         </div>
       </section>
       <!-- SECTION NEWSLETTER -->
-      <section class="newsletter-section">
+      <section class="newsletter-section" id="newsletter-section">
         <div class="newsletter-container">
           <p class="newsletter-subtitle">RESTONS EN CONTACT</p>
 
@@ -681,7 +702,7 @@
  <script src="js/faq-toggle.js" defer></script>
     </main>
     <!-- SECTION FOOTER -->
-    <footer class="site-footer">
+    <footer class="site-footer" id="footer-section">
       <div class="footer-content">
         <div class="footer-left">
           <img
