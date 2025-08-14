@@ -3,13 +3,64 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nom de la page</title>
+    <title>Fragment Faire Un Don</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
   <body>
+     <!-- Début du header principal -->
+    <header class="main-header">
+      <!-- Conteneur du logo + boutons -->
+      <div class="container">
+        <!-- Logo de la Croix-Rouge -->
+        <div class="logo">
+          <img src="images/logo-crb.svg" alt="Croix-Rouge de Belgique" />
+        </div>
+
+        <!-- Boutons à droite (Don, Rejoindre, Menu) -->
+        <div class="header-buttons">
+          <a
+            href="https://je-donne.croix-rouge.be/action_sociale/~mon-don"
+            class="btn red"
+            >DON</a
+          >
+          <a href="https://rejoindre.croix-rouge.be/" class="btn red"
+            >REJOINDRE</a
+          >
+
+         
+        </div>
+        <!-- Barre de navigation secondaire -->
+      </div>
+
+      <!-- Ligne rouge horizontale en bas du header -->
+      <div class="red-line"></div>
+      <!-- MENU PRINCIPAL -->
+<nav class="main-nav">
+  <ul>
+    <!-- Liens vers les pages -->
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="devenir-volontaire.html">Devenir volontaire</a></li>
+    <li><a href="donner-son-sang.html">Donner son sang</a></li>
+    <li><a href="faire-un-don.html">Faire un don</a></li>
+    <li><a href="retrouver-un-proche.html">Retrouver un proche</a></li>
+    <li><a href="trouver-un-job.html">Trouver un job</a></li>
+
+    <!-- Liens internes vers les sections de cette page -->
+    <li><a href="#don-actions">Actions de don</a></li>
+    <li><a href="#don-nature">Don en nature</a></li>
+    <li><a href="#don-legs">Don par legs</a></li>
+    <li><a href="#partenaire-section">Partenaires</a></li>
+    <li><a href="#collecte-section">Collectes</a></li>
+    <li><a href="#faq-section">FAQ</a></li>
+    <li><a href="#newsletter-section">Newsletter</a></li>
+    
+  </ul>
+</nav>
+
+    </header>
     <main style="margin-top: 80px">
-      <section class="hero-don">
+      <section class="hero-don" id="hero-don">
         <div class="hero-don-overlay">
           <div class="hero-don-content">
             <span class="hero-don-subtitle">ACTION SOCIALE</span>
@@ -31,7 +82,7 @@
           </div>
         </div>
       </section>
-      <section class="don-actions">
+      <section class="don-actions" id="don-actions">
         <div class="don-card">
           <img src="images/inondations.jpg" alt="Inondations en Espagne" />
           <h3>Inondations en Espagne</h3>
@@ -74,7 +125,7 @@
           >
         </div>
       </section>
-      <section class="don-nature">
+      <section class="don-nature" id="don-nature">
         <div class="don-nature-content">
           <h3>DONS EN NATURE</h3>
           <p>
@@ -95,7 +146,7 @@
           />
         </div>
       </section>
-      <section class="don-legs">
+      <section class="don-legs" id="don-legs">
         <div class="don-legs-image">
           <img
             src="images/legs-testament.jpg"
@@ -116,7 +167,7 @@
           >
         </div>
       </section>
-      <section class="partenaire-section">
+      <section class="partenaire-section" id="partenaire-section">
         <div class="partenaire-content">
           <h3>PARTENARIAT ENTREPRISES</h3>
           <p>
@@ -135,7 +186,7 @@
           />
         </div>
       </section>
-      <section class="collecte-section">
+      <section class="collecte-section" id="collecte-section">
         <div class="collecte-image">
           <img
             src="images/collecte-don.jpg"
@@ -155,7 +206,7 @@
         </div>
       </section>
       <!-- SECTION FAQ -->
-      <section class="faq-section">
+      <section class="faq-section" id="faq-section">
         <p class="faq-subtitle">CONSULTEZ NOS FAQ</p>
         <h2 class="faq-title">Vous vous posez une question ?</h2>
 
@@ -367,7 +418,7 @@
         </div>
       </section>
       <!-- SECTION NEWSLETTER -->
-      <section class="newsletter-section">
+      <section class="newsletter-section" id="newsletter-section">
         <div class="newsletter-container">
           <p class="newsletter-subtitle">RESTONS EN CONTACT</p>
 
