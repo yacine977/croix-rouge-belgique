@@ -20,25 +20,7 @@
           <!-- Logo de la Croix-Rouge -->
           <div class="logo">
             <img src="images/logo-crb.svg" alt="Croix-Rouge de Belgique" />
-            <nav>
-              <ul class="nav-links">
-                <li><a href="index.html">ACCUEIL</a></li>
-                <li>
-                  <a href="donner-son-sang.html" class="active"
-                    >DONNER SON SANG</a
-                  >
-                </li>
-                <li>
-                  <a href="devenir-volontaire.html">DEVENIR VOLONTAIRE</a>
-                </li>
-                <li>
-                  <a href="https://formations.croix-rouge.be/">SE FORMER</a>
-                </li>
-                <li>
-                  <a href="https://www.donneurdesang.be/fr/contact">CONTACT</a>
-                </li>
-              </ul>
-            </nav>
+           
           </div>
 
           <!-- Boutons à droite (Don, Rejoindre, Menu) -->
@@ -52,40 +34,41 @@
               >REJOINDRE</a
             >
 
-            <!-- Bouton MENU avec icône burger au-dessus -->
-            <a href="#" class="btn outline">
-              <span class="burger"></span>
-              MENU
-            </a>
+         
           </div>
           <!-- Barre de navigation secondaire -->
         </div>
 
         <!-- Ligne rouge horizontale en bas du header -->
         <div class="red-line"></div>
-        <!-- Barre de navigation secondaire -->
-        <nav class="don-submenu">
-          <a href="https://www.donneurdesang.be/" class="nav-link active"
-            ><i class="icon"></i>LE SERVICE DU SANG</a
-          >
-          <a
-            href="https://faire-un-don.croix-rouge.be/don-en-ligne/"
-            class="nav-link"
-          ></a>
-          <a href="#" class="nav-link">ACCUEIL</a>
+        <!-- MENU PRINCIPAL -->
+<nav class="main-nav">
+  <ul>
+    <!-- Liens vers les pages -->
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="devenir-volontaire.html">Devenir volontaire</a></li>
+    <li><a href="donner-son-sang.html">Donner son sang</a></li>
+    <li><a href="faire-un-don.html">Faire un don</a></li>
+    <li><a href="retrouver-un-proche.html">Retrouver un proche</a></li>
+    <li><a href="trouver-un-job.html">Trouver un job</a></li>
 
-          <a
-            href="https://enseignement.croix-rouge.be/nos-activites-en-detail/"
-            class="nav-link active"
-            ><i class="icon"></i>Voir les activités de la Croix-Rouge</a
-          >
-        </nav>
+    <!-- Liens internes vers les sections de cette page -->
+    <li><a href="#barometre">Baromètre</a></li>
+    <li><a href="#section-barometre">Section Baromètre</a></li>
+    <li><a href="#actus-section">Actualités</a></li>
+    <li><a href="#support-methods">Comment nous soutenir</a></li>
+    <li><a href="#info-section">Informations</a></li>
+    <li><a href="#action-section">Nous agissons</a></li>
+    <li><a href="#site-footer">Footer</a></li>
+  </ul>
+</nav>
+
       </header>
       <!-- Section HERO : image de fond, titre, texte et bouton d'appel à l'action -->
       <div class="hero-sang"></div>
 
       <div class="row-sections">
-        <section class="barometre">
+        <section class="barometre" id="barometre" >
           <h2>Baromètre des groupes sanguins</h2>
           <p>
             Le stock de votre groupe se porte mal ? Planifiez un don si vous le
@@ -190,7 +173,7 @@
           </div>
         </section>
 
-        <section class="section-barometre">
+        <section class="section-barometre" id="section-barometre">
           <h2>Baromètre du plasma</h2>
           <div class="contenu">
             <div>
@@ -220,7 +203,7 @@
         </section>
 
         <!-- SECTION ACTUALITÉS RÉCENTES -->
-        <section class="actus-section">
+        <section class="actus-section" id="actus-section">
           <!-- Conteneur global des actualités (mise en page en 2 colonnes) -->
 
           <!-- Colonne de gauche : liste des actualités récentes avec liens -->
@@ -288,7 +271,7 @@
         </section>
 
         <!-- SECTION COMMENT NOUS SOUTENIR -->
-        <section class="support-methods">
+        <section class="support-methods" id="support-methods" >
           <h2 class="support-title">Le don de sang</h2>
 
           <div class="support-cards">
@@ -345,7 +328,7 @@
             </div>
           </div>
         </section>
-        <section class="info-section">
+        <section class="info-section" id="info-section">
           <h2 class="section-titlee">Pourquoi donner son sang ?</h2>
           <div class="card">
             <img src="images/1.svg" alt="Don de sang" />
@@ -378,7 +361,7 @@
           </div>
         </section>
         <!-- SECTION NOUS AGISSONS -->
-        <section class="action-section">
+        <section class="action-section" id="action-section">
           <!-- Introduction de la section : titre et sous-titre -->
           <div class="action-intro">
             <h2 class="section-title">
@@ -445,7 +428,7 @@
     </main>
 
     <!-- SECTION FOOTER -->
-    <footer class="site-footer">
+    <footer class="site-footer" id="site-footer">
       <div class="footer-content">
         <div class="footer-left">
           <img
