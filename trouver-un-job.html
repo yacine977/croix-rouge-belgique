@@ -27,50 +27,40 @@
             >REJOINDRE</a
           >
 
-          <!-- Bouton MENU avec icône burger au-dessus -->
-          <a href="#" class="btn outline">
-            <span class="burger"></span>
-            MENU
-          </a>
+         
         </div>
         <!-- Barre de navigation secondaire -->
       </div>
 
       <!-- Ligne rouge horizontale en bas du header -->
       <div class="red-line"></div>
-      <!-- Barre de navigation secondaire -->
-      <nav class="don-submenu">
-        <a href="#" class="nav-link active"><i class="icon"></i>Accueil</a>
-        <a
-          href="https://faire-un-don.croix-rouge.be/don-en-ligne/"
-          class="nav-link"
-        ></a>
-        <a href="https://jobs.croix-rouge.be/offres-emploi/" class="nav-link"
-          >NOS OFFRES D'EMPLOI</a
-        >
-        <a
-          href="https://jobs.croix-rouge.be/5-raisons-de-travailler-a-la-croix-rouge-de-belgique/"
-          class="nav-link"
-          >POURQUOI LA CROIX ROUGE ?</a
-        >
-        <a href="https://jobs.croix-rouge.be/nos-metiers/" class="nav-link"
-          >NOS MÉTIERS</a
-        >
-        <a
-          href="https://jobs.croix-rouge.be/culture-entreprise/"
-          class="nav-link"
-          >CULTURE D'ENTREPRISE</a
-        >
-        <a href="https://jobs.croix-rouge.be/faq/" class="nav-link">FAQ</a>
-        <a
-          href="https://jobs.croix-rouge.be/jobs/connexion/"
-          class="nav-link active"
-          ><i class="icon"></i>SE CONNECTER</a
-        >
-      </nav>
+      <!-- MENU PRINCIPAL -->
+<nav class="main-nav">
+  <ul>
+    <!-- Liens vers les pages -->
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="devenir-volontaire.html">Devenir volontaire</a></li>
+    <li><a href="donner-son-sang.html">Donner son sang</a></li>
+    <li><a href="faire-un-don.html">Faire un don</a></li>
+    <li><a href="retrouver-un-proche.html">Retrouver un proche</a></li>
+    <li><a href="trouver-un-job.html">Trouver un job</a></li>
+
+    <!-- Liens internes vers les sections de cette page -->
+    <li><a href="#hero-job">Présentation</a></li>
+    <li><a href="#don-nature">Dons en nature</a></li>
+    <li><a href="#don-legs">Dons et legs</a></li>
+    <li><a href="#partenaire-section">Partenaires</a></li>
+    <li><a href="#faq-section">FAQ</a></li>
+    <li><a href="#newsletter-section">Newsletter</a></li>
+    <li><a href="#inserted-page">Page insérée</a></li>
+    <li><a href="#site-footer">Footer</a></li>
+  </ul>
+</nav>
+
+     
     </header>
     <main style="margin-top: 80px">
-      <section class="hero-job">
+      <section class="hero-job" id="hero-job">
         <div class="hero-don-overlay">
           <div class="hero-don-content">
             <span class="hero-don-subtitle">JOBS</span>
@@ -99,7 +89,7 @@
         </div>
       </div>
 
-      <section class="don-nature">
+      <section class="don-nature" id="don-nature">
         <div class="don-nature-image">
           <img
             src="images/offres-emploi.jpg"
@@ -119,7 +109,7 @@
           >
         </div>
       </section>
-      <section class="don-legs">
+      <section class="don-legs" id="don-legs">
         <div class="don-legs-content">
           <h3>Pourquoi la Croix-Rouge ?</h3>
           <p>
@@ -140,7 +130,7 @@
           />
         </div>
       </section>
-      <section class="partenaire-section">
+      <section class="partenaire-section" id="partenaire-section">
         <div class="partenaire-image">
           <img
             src="images/notre-culture-entreprise.jpg"
@@ -163,7 +153,7 @@
         </div>
       </section>
 
-      <section class="don-nature">
+      <section class="don-nature" id="don-nature">
         <div class="don-nature-content">
           <h3>Nos métiers</h3>
           <p>
@@ -186,7 +176,7 @@
       </section>
 
       <!-- SECTION FAQ -->
-      <section class="faq-section">
+      <section class="faq-section" id="faq-section">
         <p class="faq-subtitle">CONSULTEZ NOS FAQ</p>
         <h2 class="faq-title">Vous vous posez une question ?</h2>
 
@@ -398,7 +388,7 @@
         </div>
       </section>
       <!-- SECTION NEWSLETTER -->
-      <section class="newsletter-section">
+      <section class="newsletter-section" id="newsletter-section">
         <div class="newsletter-container">
           <p class="newsletter-subtitle">RESTONS EN CONTACT</p>
 
@@ -450,7 +440,7 @@
           if (form) form.reset();
         });
       </script>
-      <section class="inserted-page">
+      <section class="inserted-page" id="inserted-page">
         <h2>Page insérée : Faire un don</h2>
         <iframe
           src="fragment-faire-un-don.html"
@@ -461,7 +451,7 @@
       </section>
     </main>
     <!-- SECTION FOOTER -->
-    <footer class="site-footer">
+    <footer class="site-footer" id="site-footer">
       <div class="footer-content">
         <div class="footer-left">
           <img
